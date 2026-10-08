@@ -120,12 +120,14 @@ h1 em{font-style:italic;font-weight:300}
 
 .panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:3px;padding:22px 24px;break-inside:avoid}
 .panel h3{font-family:var(--display);font-weight:500;font-size:20px;margin:8px 0 10px}
-.logo-inst{height:38px;width:auto;background:#FFFFFF;border-radius:2px;padding:4px 7px;margin-bottom:4px}
 .panel p{margin:0;font-size:13.5px;line-height:1.6;opacity:.88}
 .panel + .panel{margin-top:0}
-.two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;align-items:stretch}
 .panel.with-art{display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:start}
-.panel.with-art img{width:76px;height:76px;object-fit:cover;border-radius:2px}
+.panel.with-art .art{width:76px;height:76px;border-radius:2px;overflow:hidden;flex:none}
+.panel.with-art .art img{width:100%;height:100%;object-fit:cover;display:block}
+.panel.with-art .art.logo{background:#FFFFFF;display:flex;align-items:center;justify-content:center;padding:8px}
+.panel.with-art .art.logo img{object-fit:contain}
 
 /* ---------- audiovisual ---------- */
 .tv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -226,7 +228,7 @@ h1 em{font-style:italic;font-weight:300}
   .demo{grid-template-columns:1fr;padding:22px}
   .contact{grid-template-columns:1fr;padding:26px}
   .panel.with-art{grid-template-columns:60px 1fr;gap:13px}
-  .panel.with-art img{width:60px;height:60px}
+  .panel.with-art .art{width:60px;height:60px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
@@ -278,10 +280,9 @@ h1 em{font-style:italic;font-weight:300}
   .pod .link a,.ws-card .link a{font-size:6.6pt}
   .panel{padding:13px 15px}
   .panel h3{font-size:11.5pt;margin:4px 0 6px}
-  .logo-inst{height:26px;padding:2px 4px}
   .panel p{font-size:8pt;line-height:1.45}
   .panel.with-art{grid-template-columns:54px 1fr;gap:11px}
-  .panel.with-art img{width:54px;height:54px}
+  .panel.with-art .art{width:54px;height:54px}
   .cer-lead{aspect-ratio:21/6;margin-bottom:11px}
   .cer-copy p{font-size:8.2pt;margin-bottom:7px}
   .thumbs{gap:5px}
@@ -398,17 +399,19 @@ h1 em{font-style:italic;font-weight:300}
     </div>
 
     <div class="two-col">
-      <div class="panel">
-        <img class="logo-inst" src="img/unr.png" alt="Universidad Nacional de Rosario">
-        <h3>Docente universitaria</h3>
-        <p>
-          Cátedra de Producción Radiofónica, Licenciatura en Comunicación Social. Dicta talleres de
-          realización de podcasts de manera presencial y virtual, para instituciones, infancias,
-          juventudes y adultos mayores.
-        </p>
+      <div class="panel with-art">
+        <div class="art logo"><img src="img/unr.png" alt="Universidad Nacional de Rosario"></div>
+        <div>
+          <div class="eyebrow">Licenciatura en Comunicación Social</div>
+          <h3>Docente universitaria</h3>
+          <p>
+            Cátedra de Producción Radiofónica. Dicta talleres de realización de podcasts de manera
+            presencial y virtual, para instituciones, infancias, juventudes y adultos mayores.
+          </p>
+        </div>
       </div>
       <div class="panel with-art">
-        <img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee">
+        <div class="art"><img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee"></div>
         <div>
           <div class="eyebrow">Infancias · Plan Rosario Lee</div>
           <h3>Talleres de Grabación y Edición Sonora</h3>
