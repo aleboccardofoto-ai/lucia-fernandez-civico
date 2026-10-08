@@ -1,0 +1,793 @@
+<meta name="robots" content="noindex, nofollow">
+<title>Lucía Fernández Cívico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=Archivo:wght@400;500;600;700&display=swap">
+
+<style>
+:root{
+  --ground:#F2F1EC;
+  --surface:#FFFFFF;
+  --ink:#191C19;
+  --muted:#6A6E67;
+  --line:#D8D7CF;
+  --line-soft:#E6E5DE;
+  --accent:#BE3227;
+  --deep:#22322C;
+  --deep-ink:#F2F1EC;
+  --gold:#C9AE6A;
+  --shadow:0 1px 2px rgba(25,28,25,.06), 0 8px 24px rgba(25,28,25,.05);
+  --display:"Newsreader", Georgia, "Times New Roman", serif;
+  --sans:"Archivo", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#141712; --surface:#1C1F19; --ink:#EAE8E0; --muted:#9DA095;
+    --line:#333629; --line-soft:#282B22; --accent:#E4614F; --deep:#2E4239;
+    --deep-ink:#EFEEE5; --gold:#D8BE7C;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.28);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#141712; --surface:#1C1F19; --ink:#EAE8E0; --muted:#9DA095;
+  --line:#333629; --line-soft:#282B22; --accent:#E4614F; --deep:#2E4239;
+  --deep-ink:#EFEEE5; --gold:#D8BE7C;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.28);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--sans);font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1060px;margin:0 auto;padding-inline:20px;padding-block:0 64px}
+a{color:inherit}
+img{display:block;max-width:100%}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* ---------- piezas comunes ---------- */
+.eyebrow{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+section{margin-top:52px}
+.sec-head{
+  display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;
+  padding-bottom:10px;border-bottom:1px solid var(--ink);margin-bottom:26px;
+}
+.sec-head h2{font-family:var(--display);font-weight:400;font-size:clamp(26px,4vw,34px);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sec-head .count{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-left:auto}
+.sub-head{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  margin:34px 0 16px;padding-bottom:7px;border-bottom:1px solid var(--line);
+}
+.sub-head h3{font-family:var(--display);font-weight:500;font-size:21px;margin:0;line-height:1.2}
+.sub-head .note{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-left:auto}
+.link a{
+  font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px;
+}
+.link a:hover{color:var(--ink)}
+
+/* ---------- portada ---------- */
+.cover{display:grid;grid-template-columns:1fr 230px;gap:40px;align-items:end;padding-block:56px 26px}
+.cover .plate{font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.19em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--display);font-weight:300;font-size:clamp(44px,8.4vw,86px);line-height:.94;letter-spacing:-.025em;margin:14px 0 0;text-wrap:balance}
+h1 em{font-style:italic;font-weight:300}
+.degrees{margin:22px 0 0;font-size:15px;max-width:34em;line-height:1.5}
+.degrees b{font-weight:600}
+.creds{margin:12px 0 0;font-size:13.5px;color:var(--muted);max-width:38em;line-height:1.55}
+.portrait{border-radius:2px;width:100%;box-shadow:var(--shadow)}
+.portrait-cap{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.services{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px;padding-bottom:26px}
+.services span{font-size:12px;font-weight:500;border:1px solid var(--line);border-radius:100px;padding:4px 12px;background:var(--surface)}
+.topbar{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:center;padding-block:14px;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);font-size:13px}
+.topbar b{font-weight:600;letter-spacing:.02em}
+
+/* ---------- premio ---------- */
+.award{
+  background:var(--deep);color:var(--deep-ink);border-radius:3px;
+  display:grid;grid-template-columns:190px 1fr;gap:32px;align-items:center;
+  padding:30px 34px;margin-top:44px;
+}
+.award img{border-radius:2px;width:100%}
+.award .eyebrow{color:var(--gold)}
+.award h3{font-family:var(--display);font-weight:400;font-size:clamp(24px,3.6vw,32px);margin:10px 0;line-height:1.12;letter-spacing:-.01em}
+.award p{margin:0;font-size:14px;line-height:1.6;opacity:.88;max-width:46em}
+.award .meta{margin-top:13px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.7}
+.award .link a{color:var(--gold)}
+
+/* ---------- docencia: talleres con foto ---------- */
+.ws-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ws-card{display:flex;flex-direction:column;gap:9px;break-inside:avoid}
+.ws-card .ph{aspect-ratio:4/3;border-radius:2px;overflow:hidden;background:var(--surface);border:1px solid var(--line-soft)}
+.ws-card .ph img{width:100%;height:100%;object-fit:cover}
+.ws-head{display:flex;align-items:center;gap:9px}
+.flag{width:26px;height:17px;border-radius:2px;flex:none;box-shadow:0 0 0 1px rgba(25,28,25,.16) inset}
+.ws-card .place{font-size:10.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.ws-card .what{font-size:13.5px;line-height:1.45}
+.ws-card .what b{font-weight:600}
+.ws-card .where{font-size:12px;color:var(--muted);margin-top:2px}
+
+.panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:3px;padding:22px 24px;break-inside:avoid}
+.panel h3{font-family:var(--display);font-weight:500;font-size:20px;margin:8px 0 10px}
+.panel p{margin:0;font-size:13.5px;line-height:1.6;opacity:.88}
+.panel + .panel{margin-top:0}
+.two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.panel.with-art{display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:start}
+.panel.with-art img{width:76px;height:76px;object-fit:cover;border-radius:2px}
+
+/* ---------- audiovisual ---------- */
+.tv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tv-item{background:var(--surface);border:1px solid var(--line-soft);border-radius:3px;overflow:hidden;display:flex;flex-direction:column;break-inside:avoid}
+.tv-item .shot{background:#0E100E;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tv-item .shot img{width:100%;height:100%;object-fit:contain}
+.tv-item .shot.plain{background:var(--deep);color:var(--gold)}
+.tv-item .shot.logo img{object-fit:cover}
+.gc-logo{aspect-ratio:16/9;background:#FFFFFF;display:flex;align-items:center;justify-content:center;padding:22px}
+.gc-logo img{width:100%;height:100%;object-fit:contain}
+.tv-item .shot.plain svg{width:46px;height:46px;opacity:.85}
+.tv-body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:5px;flex:1}
+.badge-tv{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+.badge-tv svg{width:14px;height:14px;flex:none}
+.tv-body h3{font-family:var(--display);font-weight:500;font-size:19px;margin:2px 0 0;line-height:1.15}
+.tv-body .role{font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tv-body p{margin:2px 0 0;font-size:13px;opacity:.84;line-height:1.5}
+.tv-body .link{margin-top:auto;padding-top:11px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* ---------- podcasts: listado compacto ---------- */
+.pod-list{display:grid;grid-template-columns:repeat(2,1fr);gap:4px 34px}
+.pod{
+  display:grid;grid-template-columns:62px 1fr;gap:15px;align-items:start;
+  padding-block:13px;border-top:1px solid var(--line-soft);break-inside:avoid;
+}
+.pod img{width:62px;height:62px;object-fit:cover;border-radius:2px;border:1px solid var(--line-soft)}
+.pod .role{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--accent)}
+.pod h3{font-family:var(--display);font-weight:500;font-size:17px;margin:1px 0 2px;line-height:1.2}
+.pod p{margin:0;font-size:12.5px;line-height:1.45;color:var(--muted)}
+.pod .link{margin-top:4px}
+.pod .link a{font-size:10.5px}
+
+/* ---------- demo de voz ---------- */
+.demo{background:var(--deep);color:var(--deep-ink);border-radius:3px;padding:24px 28px;display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;break-inside:avoid}
+.demo .eyebrow{color:var(--gold)}
+.demo h3{font-family:var(--display);font-weight:400;font-size:24px;margin:8px 0 0}
+.demo p{margin:7px 0 0;font-size:13px;opacity:.78;max-width:30em}
+.demo .tracks{display:flex;flex-direction:column;gap:9px}
+.demo .tracks a{
+  display:flex;align-items:center;gap:10px;text-decoration:none;font-size:13.5px;
+  border:1px solid rgba(201,174,106,.4);border-radius:100px;padding:7px 16px;white-space:nowrap;
+}
+.demo .tracks a:hover{border-color:var(--gold);background:rgba(201,174,106,.1)}
+.demo .tracks svg{width:14px;height:14px;flex:none;color:var(--gold)}
+
+/* ---------- ceremonial / entrevistas ---------- */
+.cer-lead{border-radius:3px;width:100%;aspect-ratio:21/8;object-fit:cover;object-position:center 42%;box-shadow:var(--shadow);margin-bottom:18px}
+.cer-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.cer-copy p{margin:0 0 12px;font-size:14px;line-height:1.6;max-width:36em}
+.cer-copy p:last-child{margin-bottom:0}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.thumbs img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px;background:var(--surface)}
+.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.media{display:flex;flex-direction:column;gap:9px;break-inside:avoid}
+.media img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px;border:1px solid var(--line-soft)}
+.media .who{font-family:var(--display);font-weight:500;font-size:18px;line-height:1.2}
+.media .ctx{font-size:12.5px;color:var(--muted)}
+
+/* ---------- gestión cultural ---------- */
+.gc{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.gc-item{background:var(--surface);border:1px solid var(--line-soft);border-radius:3px;overflow:hidden;break-inside:avoid;display:flex;flex-direction:column}
+.gc-item img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.gc-body{padding:18px 20px 20px}
+.gc-body h3{font-family:var(--display);font-weight:500;font-size:19px;margin:6px 0 7px}
+.gc-body p{margin:0;font-size:13px;line-height:1.55;opacity:.85}
+.gc-body .link{margin-top:11px;display:flex;gap:14px;flex-wrap:wrap}
+
+/* ---------- contacto ---------- */
+.contact{margin-top:52px;background:var(--deep);color:var(--deep-ink);border-radius:3px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
+.contact .eyebrow{color:var(--gold)}
+.contact h2{font-family:var(--display);font-weight:400;font-size:clamp(24px,4vw,32px);margin:10px 0 0;line-height:1.1}
+.contact .note{font-size:12.5px;opacity:.74;margin-top:10px;max-width:32em}
+.contact .lines{display:flex;flex-direction:column;gap:6px;font-size:15px}
+.contact .lines a{text-decoration:none;border-bottom:1px solid rgba(242,241,236,.35);padding-bottom:1px}
+.contact .lines a:hover{border-color:currentColor}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .tv-grid{grid-template-columns:repeat(2,1fr)}
+  .media-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .cover{grid-template-columns:1fr 190px;gap:28px}
+  .ws-grid{grid-template-columns:repeat(2,1fr)}
+  .pod-list{grid-template-columns:1fr;gap:0}
+  .two-col{grid-template-columns:1fr}
+  .gc{grid-template-columns:1fr}
+}
+@media (max-width:660px){
+  .cover{grid-template-columns:1fr;align-items:start;padding-block:40px 22px}
+  .portrait{max-width:210px}
+  .award{grid-template-columns:1fr;gap:20px;padding:24px}
+  .award img{max-width:165px}
+  .tv-grid{grid-template-columns:1fr}
+  .ws-grid{grid-template-columns:1fr}
+  .media-grid{grid-template-columns:1fr}
+  .cer-grid{grid-template-columns:1fr}
+  .demo{grid-template-columns:1fr;padding:22px}
+  .contact{grid-template-columns:1fr;padding:26px}
+  .panel.with-art{grid-template-columns:60px 1fr;gap:13px}
+  .panel.with-art img{width:60px;height:60px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- impresión A4 ---------- */
+@media print{
+  @page{size:A4;margin:11mm}
+  :root{--ground:#FFFFFF;--surface:#FFFFFF;--shadow:none}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-size:8.8pt;line-height:1.35;background:#fff}
+  .wrap{max-width:none;padding:0}
+  h1{font-size:33pt}
+  .cover{padding-block:0 14px;grid-template-columns:1fr 132px;gap:26px}
+  .degrees{font-size:9.5pt;margin-top:14px}
+  .creds{font-size:8.2pt}
+  .services{margin-top:12px;padding-bottom:14px;gap:5px}
+  .services span{font-size:7.4pt;padding:2px 9px}
+  section{margin-top:16px}
+  .sec-head{margin-bottom:12px;padding-bottom:6px}
+  .sec-head h2{font-size:16pt}
+  .sec-head,.sub-head{break-after:avoid}
+  .sub-head{margin:16px 0 10px}
+  .sub-head h3{font-size:12pt}
+  .award,.contact,.demo{padding:15px 18px;break-inside:avoid}
+  .award{grid-template-columns:120px 1fr;gap:18px;margin-top:14px;break-before:avoid}
+  .contact{margin-top:16px;break-before:avoid}
+  /* A4 deja ~700px utiles: sin esto se dispara la media query de movil */
+  .tv-grid{grid-template-columns:repeat(3,1fr);gap:10px}
+  .ws-grid{grid-template-columns:repeat(3,1fr);gap:11px}
+  .pod-list{grid-template-columns:repeat(2,1fr);gap:0 20px}
+  .two-col{grid-template-columns:repeat(2,1fr);gap:11px}
+  .media-grid{grid-template-columns:repeat(3,1fr);gap:12px}
+  .gc{grid-template-columns:repeat(2,1fr);gap:12px}
+  .cer-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .cover{grid-template-columns:1fr 132px}
+  .tv-item .shot{aspect-ratio:16/9}
+  .tv-body{padding:9px 11px 11px;gap:3px}
+  .tv-body h3{font-size:11pt}
+  .tv-body p{font-size:7.4pt}
+  .ws-card{gap:5px}
+  .ws-card .what{font-size:7.6pt}
+  .ws-card .where{font-size:6.8pt}
+  .ws-card .place{font-size:6.6pt}
+  .pod{padding-block:7px;grid-template-columns:46px 1fr;gap:10px}
+  .pod img{width:46px;height:46px}
+  .pod h3{font-size:10.5pt}
+  .pod p{font-size:7.3pt;line-height:1.3}
+  .pod .link a,.ws-card .link a{font-size:6.6pt}
+  .panel{padding:13px 15px}
+  .panel h3{font-size:11.5pt;margin:4px 0 6px}
+  .panel p{font-size:8pt;line-height:1.45}
+  .panel.with-art{grid-template-columns:54px 1fr;gap:11px}
+  .panel.with-art img{width:54px;height:54px}
+  .cer-lead{aspect-ratio:21/6;margin-bottom:11px}
+  .cer-copy p{font-size:8.2pt;margin-bottom:7px}
+  .thumbs{gap:5px}
+  .media .who{font-size:11pt}
+  .media .ctx{font-size:7.4pt}
+  .gc-body{padding:11px 13px 13px}
+  .gc-body h3{font-size:11pt}
+  .gc-body p{font-size:7.6pt}
+  .demo h3{font-size:13pt}
+  .demo p{font-size:7.6pt}
+  .demo .tracks a{font-size:8pt;padding:4px 11px}
+  .link a{border-bottom:none}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ico-tv" viewBox="0 0 24 24">
+      <path d="M6.5 2.6 12 7.2l5.5-4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <rect x="2.2" y="7.2" width="19.6" height="13.4" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="18" cy="17.4" r="1.15" fill="currentColor"/>
+    </symbol>
+    <symbol id="ico-play" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M10 8.2 16 12l-6 3.8Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="fl-ar" viewBox="0 0 30 20"><rect width="30" height="20" fill="#fff"/><rect width="30" height="6.67" fill="#75AADB"/><rect y="13.33" width="30" height="6.67" fill="#75AADB"/><circle cx="15" cy="10" r="2.1" fill="#F6B40E"/></symbol>
+    <symbol id="fl-es" viewBox="0 0 30 20"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></symbol>
+    <symbol id="fl-co" viewBox="0 0 30 20"><rect width="30" height="20" fill="#CE1126"/><rect width="30" height="15" fill="#003893"/><rect width="30" height="10" fill="#FCD116"/></symbol>
+    <symbol id="fl-sv" viewBox="0 0 30 20"><rect width="30" height="20" fill="#0F47AF"/><rect y="6.67" width="30" height="6.67" fill="#fff"/></symbol>
+    <symbol id="fl-cu" viewBox="0 0 30 20">
+      <rect width="30" height="20" fill="#fff"/>
+      <rect width="30" height="4" fill="#002A8F"/><rect y="8" width="30" height="4" fill="#002A8F"/><rect y="16" width="30" height="4" fill="#002A8F"/>
+      <path d="M0 0 13 10 0 20Z" fill="#CF142B"/>
+      <path d="m4.6 7.2.86 2.1 2.26.12-1.76 1.42.57 2.2-1.93-1.2-1.93 1.2.57-2.2L1.48 9.42l2.26-.12Z" fill="#fff"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+
+  <!-- ============ PORTADA ============ -->
+  <header class="cover">
+    <div>
+      <div class="plate">Locutora Nacional, Mat. 7492 · Docente universitaria</div>
+      <h1>Lucía<br>Fernández <em>Cívico</em></h1>
+      <p class="degrees">
+        <b>Magíster en Comunicación y Educación</b> · Especialista en Comunicación Radiofónica (UNLP)
+        — <b>Licenciada en Comunicación Social</b> · Locutora Nacional (UNR / ISET N.º 18)
+      </p>
+      <p class="creds">
+        Productora de radio y medios audiovisuales, realizadora integral de podcasts, docente
+        universitaria y locutora profesional: voz en off, doblaje, audiolibros, locución comercial,
+        artística e institucional.
+      </p>
+    </div>
+    <div>
+      <img class="portrait" src="img/retrato.jpg" alt="Lucía Fernández Cívico frente al micrófono en su estudio">
+      <div class="portrait-cap">Estudio de grabación propio</div>
+    </div>
+  </header>
+
+  <div class="services">
+    <span>Docencia universitaria</span>
+    <span>Talleres de podcast</span>
+    <span>Producción de podcasts</span>
+    <span>Producción audiovisual</span>
+    <span>Conducción en TV</span>
+    <span>Locución institucional</span>
+    <span>Voz en off y doblaje</span>
+    <span>Audiolibros</span>
+    <span>Ceremonial y protocolo</span>
+    <span>Gestión cultural</span>
+  </div>
+
+  <div class="topbar">
+    <b>+54 9 341 576-6938</b>
+    <b>lfernandezcivico@gmail.com</b>
+    <span>Español nativo · Inglés avanzado</span>
+  </div>
+
+  <!-- ============ PREMIO ============ -->
+  <div class="award">
+    <img src="img/tapa-paez.jpg" alt="Arte de tapa del documental 30 años después del amor">
+    <div>
+      <div class="eyebrow">Premio Martín Fierro · Documental de radio</div>
+      <h3>30 años después del amor</h3>
+      <p>
+        Homenaje a uno de los discos emblemáticos del rock nacional, producido íntegramente en
+        Radio Universidad de Rosario. Participación en la producción y la locución.
+      </p>
+      <div class="meta">Radio Universidad de Rosario · 2023</div>
+      <div class="link" style="margin-top:13px">
+        <a href="https://radio.unr.edu.ar/2023/09/24/el-premio-despues-del-amor-radio-universidad-gano-el-martin-fierro-por-emision-especial-sobre-fito/" target="_blank" rel="noopener">Leer la nota</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DOCENCIA ============ -->
+  <section>
+    <div class="sec-head">
+      <h2>Docencia y formación</h2>
+      <span class="count">Universidad · Talleres · Cinco países</span>
+    </div>
+
+    <div class="two-col">
+      <div class="panel">
+        <div class="eyebrow">Universidad Nacional de Rosario</div>
+        <h3>Docente universitaria</h3>
+        <p>
+          Cátedra de Producción Radiofónica, Licenciatura en Comunicación Social. Dicta talleres de
+          realización de podcasts de manera presencial y virtual, para instituciones, infancias,
+          juventudes y adultos mayores.
+        </p>
+      </div>
+      <div class="panel with-art">
+        <img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee">
+        <div>
+          <div class="eyebrow">Infancias · Plan Rosario Lee</div>
+          <h3>Talleres de podcast</h3>
+          <p>
+            Mediación lectora y producción sonora con chicos y chicas: la oralidad, la lectura y la
+            experimentación con el sonido como herramientas lúdicas. Docente tallerista y edición.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-head">
+      <h3>Talleres y conferencias en el mundo</h3>
+      <span class="note">Cuba · El Salvador · España · Colombia · Argentina</span>
+    </div>
+
+    <div class="ws-grid">
+      <article class="ws-card">
+        <div class="ph"><img src="img/t-habana.jpg" alt="Grupo del taller de podcasts en La Habana"></div>
+        <div class="ws-head">
+          <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Cuba"><use href="#fl-cu"></use></svg>
+          <span class="place">La Habana · 2023</span>
+        </div>
+        <div class="what"><b>Taller de Podcasts</b></div>
+        <div class="where">Instituto Internacional de Periodismo José Martí</div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ph"><img src="img/t-salvador.jpg" alt="Grupo del taller de radio en El Salvador"></div>
+        <div class="ws-head">
+          <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="El Salvador"><use href="#fl-sv"></use></svg>
+          <span class="place">El Salvador · 2015</span>
+        </div>
+        <div class="what"><b>Taller de radio</b> en el Congreso Internacional de Medios de Comunicación y Televisión</div>
+        <div class="where">UTEC, San Salvador</div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ph"><img src="img/t-barcelona.jpg" alt="Grupo en la Universidad Autónoma de Barcelona"></div>
+        <div class="ws-head">
+          <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="España"><use href="#fl-es"></use></svg>
+          <span class="place">Barcelona, España · 2016</span>
+        </div>
+        <div class="what"><b>«Experiencias Radiofónicas en la Educación»</b>, conferencia</div>
+        <div class="where">Facultad de Ciencias de la Comunicación, Universidad Autónoma de Barcelona</div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ph"><img src="img/t-asturias.jpg" alt="Grupo del taller en Mieres, Asturias"></div>
+        <div class="ws-head">
+          <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="España"><use href="#fl-es"></use></svg>
+          <span class="place">Asturias, España · 2018</span>
+        </div>
+        <div class="what"><b>«Palabras y sonidos para una cartografía»</b>, taller</div>
+        <div class="where">Centro Social para Adultos Mayores de Mieres</div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ph"><img src="img/t-ibague.jpg" alt="Grupo en la Universidad del Tolima, Ibagué"></div>
+        <div class="ws-head">
+          <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Colombia"><use href="#fl-co"></use></svg>
+          <span class="place">Ibagué, Colombia · 2019</span>
+        </div>
+        <div class="what"><b>Conferencia</b> sobre las formas de hacer y pensar la radio en Argentina</div>
+        <div class="where">Universidad del Tolima</div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ph"><img src="img/t-medellin.jpg" alt="Grupo del conversatorio en Medellín"></div>
+        <div class="ws-head">
+          <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Colombia"><use href="#fl-co"></use></svg>
+          <span class="place">Medellín, Colombia · 2019</span>
+        </div>
+        <div class="what"><b>Conversatorio</b>: la radio y su papel en la construcción de ciudadanía</div>
+        <div class="where">Alcaldía de Medellín</div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ph"><img src="img/t-bsas.jpg" alt="Equipo del Festival Basado en Hechos Reales"></div>
+        <div class="ws-head">
+          <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Argentina"><use href="#fl-ar"></use></svg>
+          <span class="place">Buenos Aires · 2019</span>
+        </div>
+        <div class="what"><b>Podcast del Festival Basado en Hechos Reales</b>, tercera edición</div>
+        <div class="where">Realización integral</div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ph"><img src="img/t-rosario.jpg" alt="Grupo del Taller de Medios de la Maestría en Comunicación Estratégica"></div>
+        <div class="ws-head">
+          <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Argentina"><use href="#fl-ar"></use></svg>
+          <span class="place">Rosario · 2019</span>
+        </div>
+        <div class="what"><b>Taller de Medios</b>, Maestría en Comunicación Estratégica</div>
+        <div class="where">Universidad Nacional de Rosario</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ AUDIOVISUAL ============ -->
+  <section>
+    <div class="sec-head">
+      <h2>Audiovisual</h2>
+      <span class="count">Conducción · Producción · Cronista</span>
+    </div>
+
+    <div class="tv-grid">
+      <article class="tv-item">
+        <div class="shot"><img src="img/ultima-cena.jpg" alt="Lucía Fernández Cívico en una entrevista de La Última Cena"></div>
+        <div class="tv-body">
+          <span class="badge-tv"><svg><use href="#ico-tv"></use></svg> Canal Encuentro · 2022</span>
+          <h3>La Última Cena</h3>
+          <div class="role">Conductora</div>
+          <p>Serie documental sobre la relación de los argentinos con la alimentación, la historia de la comida y el modelo de producción actual.</p>
+          <div class="link"><a href="https://www.youtube.com/watch?v=BO2NLGO6C1I" target="_blank" rel="noopener">Ver el programa</a></div>
+        </div>
+      </article>
+
+      <article class="tv-item">
+        <div class="shot logo"><img src="img/usina.jpg" alt="Placa del programa UsinaTV"></div>
+        <div class="tv-body">
+          <span class="badge-tv"><svg><use href="#ico-tv"></use></svg> UsinaTV</span>
+          <h3>UsinaTV</h3>
+          <div class="role">Productora del programa</div>
+          <p>Entrevistas a Jack Black, Pepe Mujica, Rubén Rada y Leonardo Sbaraglia, entre otros.</p>
+          <div class="link">
+            <a href="https://www.youtube.com/watch?v=oghMiTzl_rc" target="_blank" rel="noopener">Ver entrevista</a>
+            <a href="https://www.instagram.com/p/CSLN7Fkr3DI/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tv-item">
+        <div class="shot"><img src="img/glosa.jpg" alt="Entrevista del ciclo Glosa, registrada en territorio"></div>
+        <div class="tv-body">
+          <span class="badge-tv"><svg><use href="#ico-tv"></use></svg> RTS Medios · 2023–2026</span>
+          <h3>Glosa</h3>
+          <div class="role">Productora general</div>
+          <p>Ciclo de micros audiovisuales dedicado a la literatura santafesina: entrevistas íntimas con escritoras y escritores, registradas en territorio.</p>
+          <div class="link"><a href="https://www.youtube.com/playlist?list=PLmXJX7PmqYiTUBawQNmf8gkjmqDiH8Bfd" target="_blank" rel="noopener">Ver el ciclo</a></div>
+        </div>
+      </article>
+
+      <article class="tv-item">
+        <div class="shot"><img src="img/ojo-de-pez.jpg" alt="Placa del programa Ojo de Pez"></div>
+        <div class="tv-body">
+          <span class="badge-tv"><svg><use href="#ico-tv"></use></svg> 2009</span>
+          <h3>Ojo de Pez</h3>
+          <div class="role">Conducción</div>
+          <p>Panorama de la producción audiovisual latinoamericana —ficción, documental, animación y experimental—: «un espacio donde Latinoamérica se revela en imágenes».</p>
+          <div class="link"><a href="https://www.lacapital.com.ar/edicion-impresa/rosario-busca-que-su-televisioacuten-sea-internacional-n725734.html" target="_blank" rel="noopener">Leer la nota</a></div>
+        </div>
+      </article>
+
+      <article class="tv-item">
+        <div class="shot"><img src="img/c5n-aborto.jpg" alt="Móvil en vivo para C5N desde Rosario"></div>
+        <div class="tv-body">
+          <span class="badge-tv"><svg><use href="#ico-tv"></use></svg> C5N · Móviles en vivo</span>
+          <h3>Cronista en Rosario</h3>
+          <div class="role">Coberturas en directo</div>
+          <p>Encuentro Nacional de Mujeres · Acto Central del Día de la Bandera con visita presidencial.</p>
+        </div>
+      </article>
+
+      <article class="tv-item">
+        <div class="shot"><img src="img/messi.jpg" alt="Cobertura del casamiento de Lionel Messi y Antonela Roccuzzo"></div>
+        <div class="tv-body">
+          <span class="badge-tv"><svg><use href="#ico-tv"></use></svg> Radio Universidad</span>
+          <h3>Casamiento de Messi y Antonela Roccuzzo</h3>
+          <div class="role">Cronista</div>
+          <p>Cobertura de uno de los acontecimientos más seguidos de la ciudad, desde la alfombra roja.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PODCASTS ============ -->
+  <section>
+    <div class="sec-head">
+      <h2>Podcasts y series sonoras</h2>
+      <span class="count">Nueve producciones</span>
+    </div>
+
+    <div class="pod-list">
+      <article class="pod">
+        <img src="img/mujeres-revolucion.jpg" alt="Tapa del podcast Mujeres y Revolución">
+        <div>
+          <div class="role">Realización integral</div>
+          <h3>Mujeres y Revolución</h3>
+          <p>Investigación histórica del Centro de Estudios Latinoamericanos Che Guevara, con la Cátedra de Producción Radiofónica y el Laboratorio Sonoro de la UNR.</p>
+          <div class="link"><a href="https://www.youtube.com/watch?v=cS05MNa8qVs" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+
+      <article class="pod">
+        <img src="img/qom.jpg" alt="Tapa de Relatos Artesanales Qom">
+        <div>
+          <div class="role">Coordinación y producción</div>
+          <h3>Relatos Artesanales Qom</h3>
+          <p>El saber-hacer y la memoria del Pueblo Qom del Barrio Toba Zona Oeste de Rosario. Fundación Alwa y Escuela de Comunicación UNR.</p>
+          <div class="link"><a href="https://open.spotify.com/show/4c0AA0L0cJBRpnk9jgsRzr" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+
+      <article class="pod">
+        <img src="img/migrantes.jpg" alt="Tapa de Microrrelatos en Movimiento">
+        <div>
+          <div class="role">Creadora y coproductora</div>
+          <h3>Microrrelatos en Movimiento</h3>
+          <p>Relatos testimoniales en primera persona sobre trayectorias e integración de comunidades migrantes, para Rosario Abierta al Mundo.</p>
+          <div class="link"><a href="https://open.spotify.com/show/1DNq6KNAPAWRhVOEtIFOTI" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+
+      <article class="pod">
+        <img src="img/contamos-con-vos.jpg" alt="Tapa del podcast Contamos con Vos">
+        <div>
+          <div class="role">Producción y entrevistas</div>
+          <h3>Contamos con Vos</h3>
+          <p>Podcast documental por los 50 años de Comunicación Social (UNR): testimonios de pioneros y proyecciones de la educación pública.</p>
+          <div class="link"><a href="https://open.spotify.com/show/5J28tBj7p8aVoaeuBU528N" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+
+      <article class="pod">
+        <img src="img/astengo.jpg" alt="Interior del Teatro Astengo">
+        <div>
+          <div class="role">Realización integral</div>
+          <h3>Podcast Oficial Teatro Astengo</h3>
+          <p>La historia, la mística y los entretelones de uno de los teatros más emblemáticos de Rosario, en entrevistas íntimas.</p>
+          <div class="link"><a href="https://open.spotify.com/show/61NMiEMgoMJ9Qou95ANOO3" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+
+      <article class="pod">
+        <img src="img/la-florida.jpg" alt="Tapa del podcast La Florida, playa del Paraná">
+        <div>
+          <div class="role">Producción y realización</div>
+          <h3>Historia del Balneario La Florida</h3>
+          <p>Documental sonoro sobre la ribera rosarina en clave histórica, turística y ecológica: la identidad urbana ligada al río Paraná.</p>
+          <div class="link"><a href="https://open.spotify.com/show/4k3BubDo6T5Z3r61EsoxYO" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+
+      <article class="pod">
+        <img src="img/al-lado-rio.jpg" alt="Ilustración de tapa de Al lado de un río">
+        <div>
+          <div class="role">Cocreación y conducción</div>
+          <h3>Al lado de un río</h3>
+          <p>Podcast de música hecha en Rosario, junto a Pablo Zini. Cada semana en el bar cultural Casa Brava, con artistas que crean al lado del Paraná.</p>
+          <div class="link"><a href="https://open.spotify.com/show/7b3iA7UOqDYq4361vhkXTO" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+
+      <article class="pod">
+        <img src="img/historias-sexta.jpg" alt="Tapa de Historias de la Sexta">
+        <div>
+          <div class="role">Producción general</div>
+          <h3>Historias de la Sexta</h3>
+          <p>Serie de podcasts barriales sobre la identidad, las memorias colectivas y los personajes del Barrio República de la Sexta.</p>
+          <div class="link"><a href="https://www.youtube.com/playlist?list=PLcm8xee-wqXGMpfYhOMHKb6SsQHnkbzKe" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+
+      <article class="pod">
+        <img src="img/noche-lapices.jpg" alt="Tapa de Memoria en cuerpo y palabra, La Noche de los Lápices">
+        <div>
+          <div class="role">Tallerista y producción</div>
+          <h3>Voces y Memoria</h3>
+          <p>Miniserie en tres capítulos sobre la Noche de los Lápices, producida con jóvenes en el Laboratorio Tecnológico de Puerto Joven.</p>
+          <div class="link"><a href="https://open.spotify.com/episode/6huOFSZFjJTzNJ0hv0FABW" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ LOCUCIÓN ============ -->
+  <section>
+    <div class="sec-head">
+      <h2>Locución</h2>
+      <span class="count">Comercial · Institucional · Ceremonial</span>
+    </div>
+
+    <div class="demo">
+      <div>
+        <div class="eyebrow">Demo de voz</div>
+        <h3>Escuchar la voz</h3>
+        <p>Locución comercial, institucional y en inglés. Estudio de grabación propio.</p>
+      </div>
+      <div class="tracks">
+        <a href="https://www.instagram.com/p/CXen6YDv7eo/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Bondis · comercial</a>
+        <a href="https://www.instagram.com/p/CXcIAgSroHf/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Atom Protect · comercial</a>
+        <a href="https://www.instagram.com/tv/B-cotY-J9dd/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Locución en inglés</a>
+      </div>
+    </div>
+
+    <div class="sub-head">
+      <h3>Ceremonial y protocolo</h3>
+      <span class="note">Actos oficiales · Congresos</span>
+    </div>
+
+    <img class="cer-lead" src="img/cer-acto.jpg" alt="Lucía Fernández Cívico en un acto masivo al aire libre">
+
+    <div class="cer-grid">
+      <div class="cer-copy">
+        <p>
+          Conducción y locución de actos oficiales, aperturas institucionales, congresos y ceremonias
+          protocolares para organismos públicos y universidades.
+        </p>
+        <p>
+          Locución comercial, institucional y artística, voz en off, doblaje y audiolibros, con estudio
+          de grabación propio.
+        </p>
+      </div>
+      <div class="thumbs">
+        <img src="img/cer-nueva-1.jpg" alt="Locución en un evento institucional">
+        <img src="img/cer-nueva-2.jpg" alt="Locución en un escenario">
+        <img src="img/cer-1.jpg" alt="Locución en un acto de gobierno">
+        <img src="img/cer-3.jpg" alt="Locución en un acto con banderas oficiales">
+        <img src="img/cer-4.jpg" alt="Micrófono en mano durante un evento">
+        <img src="img/cer-5.jpg" alt="Locución en un acto institucional">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENTREVISTAS Y PRESENTACIONES ============ -->
+  <section>
+    <div class="sec-head">
+      <h2>Entrevistas y presentaciones</h2>
+      <span class="count">Diversos medios</span>
+    </div>
+
+    <div class="media-grid">
+      <article class="media">
+        <img src="img/camila.jpg" alt="Entrevista a Camila Sosa Villada">
+        <div>
+          <div class="who">Camila Sosa Villada</div>
+          <div class="ctx">Entrevista</div>
+        </div>
+      </article>
+      <article class="media">
+        <img src="img/saborido.jpg" alt="Entrevista a Pedro Saborido en la Feria Internacional del Libro de Rosario">
+        <div>
+          <div class="who">Pedro Saborido</div>
+          <div class="ctx">Feria Internacional del Libro de Rosario</div>
+        </div>
+      </article>
+      <article class="media">
+        <img src="img/selva.jpg" alt="Presentación de libro de Selva Almada">
+        <div>
+          <div class="who">Selva Almada</div>
+          <div class="ctx">Presentación de libro</div>
+        </div>
+      </article>
+    </div>
+    <p style="margin:18px 0 0;font-size:13.5px;color:var(--muted)">
+      También entrevistó a <b style="color:var(--ink);font-weight:600">Joan Manuel Serrat</b>, entre otras figuras.
+    </p>
+  </section>
+
+  <!-- ============ GESTIÓN CULTURAL ============ -->
+  <section>
+    <div class="sec-head">
+      <h2>Gestión cultural</h2>
+      <span class="count">Co-organización de jornadas, festivales y congresos</span>
+    </div>
+
+    <div class="gc">
+      <article class="gc-item">
+        <div class="gc-logo"><img src="img/porlasramas.jpg" alt="Logo del festival Por las Ramas"></div>
+        <div class="gc-body">
+          <div class="eyebrow">Trevelin, Chubut · 2026</div>
+          <h3>Festival Autogestivo de Poesía de Trevelin</h3>
+          <p>Co-organizadora del primer festival de poesía de la localidad, en la cordillera chubutense.</p>
+          <div class="link"><a href="https://www.instagram.com/porlasramasfestival/" target="_blank" rel="noopener">@porlasramasfestival</a></div>
+        </div>
+      </article>
+
+      <article class="gc-item">
+        <img src="img/g-radialistas.jpg" alt="Equipo organizador del Encuentro de Radialistas Feministas">
+        <div class="gc-body">
+          <div class="eyebrow">Rosario · 2019</div>
+          <h3>Encuentro de Radialistas Feministas</h3>
+          <p>Organización del encuentro nacional, con cobertura en medios televisivos y de la Facultad de Ciencia Política y RR.II. de la UNR.</p>
+          <div class="link">
+            <a href="https://encuentroradialistafeminista.wordpress.com/" target="_blank" rel="noopener">Sitio del encuentro</a>
+            <a href="https://fcpolit.unr.edu.ar/encuentro-de-radialistas-feministas/" target="_blank" rel="noopener">Nota UNR</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <div class="contact">
+    <div>
+      <div class="eyebrow">Disponible para trabajar</div>
+      <h2>Hablemos</h2>
+      <p class="note">Docencia y talleres, producción de podcasts, conducción y locución. Estudio de grabación propio.</p>
+    </div>
+    <div class="lines">
+      <a href="tel:+5493415766938">+54 9 341 576-6938</a>
+      <a href="mailto:lfernandezcivico@gmail.com">lfernandezcivico@gmail.com</a>
+    </div>
+  </div>
+
+</div>
