@@ -261,6 +261,9 @@ h1 em{font-style:italic;font-weight:300}
   .sec-head,.sub-head{break-after:avoid;break-inside:avoid}
   /* grupos que no se parten entre hojas */
   .thumbs,.ws-card,.pod,.media,.gc-item,.two-col,.cer-grid{break-inside:avoid}
+  .pod-list{break-inside:avoid}
+  /* la nota de Serrat no se separa de las fotos */
+  #sec-entrevistas{break-inside:avoid}
   /* este titulo quedaba solo al pie de la hoja anterior */
   .sub-head{margin:16px 0 10px}
   .sub-head h3{font-size:12pt}
@@ -284,10 +287,10 @@ h1 em{font-style:italic;font-weight:300}
   .ws-card .what{font-size:7.6pt}
   .ws-card .where{font-size:6.8pt}
   .ws-card .place{font-size:6.6pt}
-  .pod{padding-block:7px;grid-template-columns:46px 1fr;gap:10px}
-  .pod img{width:46px;height:46px}
-  .pod h3{font-size:10.5pt}
-  .pod p{font-size:7.3pt;line-height:1.3}
+  .pod{padding-block:5px;grid-template-columns:42px 1fr;gap:9px}
+  .pod img{width:42px;height:42px}
+  .pod h3{font-size:10pt}
+  .pod p{font-size:7.1pt;line-height:1.28}
   .pod .link a,.ws-card .link a{font-size:6.6pt}
   .panel{padding:13px 15px}
   .panel h3{font-size:11.5pt;margin:4px 0 6px}
@@ -750,7 +753,7 @@ h1 em{font-style:italic;font-weight:300}
   </section>
 
   <!-- ============ ENTREVISTAS Y PRESENTACIONES ============ -->
-  <section>
+  <section id="sec-entrevistas">
     <div class="sec-head">
       <h2>Entrevistas y presentaciones</h2>
       <span class="count">Diversos medios</span>
