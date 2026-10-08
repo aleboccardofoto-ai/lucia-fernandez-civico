@@ -136,8 +136,10 @@ h1 em{font-style:italic;font-weight:300}
 .tv-item .shot img{width:100%;height:100%;object-fit:contain}
 .tv-item .shot.plain{background:var(--deep);color:var(--gold)}
 .tv-item .shot.logo img{object-fit:cover}
-.gc-logo{aspect-ratio:16/9;background:#FFFFFF;display:flex;align-items:center;justify-content:center;padding:22px}
-.gc-logo img{width:100%;height:100%;object-fit:contain}
+.gc-ph{aspect-ratio:16/9;overflow:hidden;background:var(--surface)}
+.gc-ph img{width:100%;height:100%;object-fit:cover;display:block}
+.gc-ph.logo{background:#FFFFFF;padding:22px}
+.gc-ph.logo img{object-fit:contain}
 .tv-item .shot.plain svg{width:46px;height:46px;opacity:.85}
 .tv-body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:5px;flex:1}
 .badge-tv{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
@@ -194,13 +196,12 @@ h1 em{font-style:italic;font-weight:300}
 .media .ctx{font-size:12.5px;color:var(--muted)}
 
 /* ---------- gestión cultural ---------- */
-.gc{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.gc{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;align-items:stretch}
 .gc-item{background:var(--surface);border:1px solid var(--line-soft);border-radius:3px;overflow:hidden;break-inside:avoid;display:flex;flex-direction:column}
-.gc-item img{width:100%;aspect-ratio:16/9;object-fit:cover}
-.gc-body{padding:18px 20px 20px}
+.gc-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
 .gc-body h3{font-family:var(--display);font-weight:500;font-size:19px;margin:6px 0 7px}
 .gc-body p{margin:0;font-size:13px;line-height:1.55;opacity:.85}
-.gc-body .link{margin-top:11px;display:flex;gap:14px;flex-wrap:wrap}
+.gc-body .link{margin-top:auto;padding-top:13px;display:flex;gap:14px;flex-wrap:wrap}
 
 /* ---------- contacto ---------- */
 .contact{margin-top:52px;background:var(--deep);color:var(--deep-ink);border-radius:3px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
@@ -789,7 +790,7 @@ h1 em{font-style:italic;font-weight:300}
 
     <div class="gc">
       <article class="gc-item">
-        <div class="gc-logo"><img src="img/porlasramas.jpg" alt="Logo del festival Por las Ramas"></div>
+        <div class="gc-ph logo"><img src="img/porlasramas.jpg" alt="Logo del festival Por las Ramas"></div>
         <div class="gc-body">
           <div class="eyebrow">Trevelin, Chubut · 2026</div>
           <h3>Festival Autogestivo de Poesía de Trevelin</h3>
@@ -799,7 +800,7 @@ h1 em{font-style:italic;font-weight:300}
       </article>
 
       <article class="gc-item">
-        <img src="img/g-radialistas.jpg" alt="Equipo organizador del Encuentro de Radialistas Feministas">
+        <div class="gc-ph"><img src="img/g-radialistas.jpg" alt="Equipo organizador del Encuentro de Radialistas Feministas"></div>
         <div class="gc-body">
           <div class="eyebrow">Rosario · 2019</div>
           <h3>Encuentro de Radialistas Feministas</h3>
