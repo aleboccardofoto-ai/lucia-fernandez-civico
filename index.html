@@ -258,7 +258,10 @@ h1 em{font-style:italic;font-weight:300}
   .sec-head h2{font-size:21pt}
   .sec-head{padding-bottom:7px;gap:4px}
   .sub-head h3{font-size:13pt}
-  .sec-head,.sub-head{break-after:avoid}
+  .sec-head,.sub-head{break-after:avoid;break-inside:avoid}
+  /* grupos que no se parten entre hojas */
+  .thumbs,.ws-card,.pod,.media,.gc-item,.two-col,.cer-grid{break-inside:avoid}
+  /* este titulo quedaba solo al pie de la hoja anterior */
   .sub-head{margin:16px 0 10px}
   .sub-head h3{font-size:12pt}
   .award,.contact,.demo{padding:15px 18px;break-inside:avoid}
@@ -266,7 +269,7 @@ h1 em{font-style:italic;font-weight:300}
   .contact{margin-top:16px;break-before:avoid}
   /* A4 deja ~700px utiles: sin esto se dispara la media query de movil */
   .tv-grid{grid-template-columns:repeat(3,1fr);gap:10px}
-  .ws-grid{grid-template-columns:repeat(3,1fr);gap:11px}
+  .ws-grid{grid-template-columns:repeat(4,1fr);gap:10px}
   .pod-list{grid-template-columns:repeat(2,1fr);gap:0 20px}
   .two-col{grid-template-columns:repeat(2,1fr);gap:11px}
   .media-grid{grid-template-columns:repeat(3,1fr);gap:12px}
@@ -521,7 +524,7 @@ h1 em{font-style:italic;font-weight:300}
   </section>
 
   <!-- ============ AUDIOVISUAL ============ -->
-  <section>
+  <section id="sec-audiovisual">
     <div class="sec-head">
       <h2>Audiovisual</h2>
       <span class="count">Conducción · Producción · Cronista</span>
