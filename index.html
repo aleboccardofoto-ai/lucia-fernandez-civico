@@ -193,9 +193,10 @@ h1 em{font-style:italic;font-weight:300}
 .cer-copy p:last-child{margin-bottom:0}
 .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .thumbs img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px;background:var(--surface)}
-.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.media-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .media{display:flex;flex-direction:column;gap:9px;break-inside:avoid}
-.media img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:2px;border:1px solid var(--line-soft)}
+.media img{width:100%;aspect-ratio:3/2;object-fit:cover;object-position:center 32%;border-radius:2px;border:1px solid var(--line-soft)}
+.media img[src*="selva"]{object-position:center 58%}
 .media .who{font-family:var(--display);font-weight:500;font-size:18px;line-height:1.2}
 .media .ctx{font-size:12.5px;color:var(--muted)}
 
@@ -281,7 +282,7 @@ h1 em{font-style:italic;font-weight:300}
   .ws-grid{grid-template-columns:repeat(4,1fr);gap:10px}
   .pod-list{grid-template-columns:repeat(2,1fr);gap:0 20px}
   .two-col{grid-template-columns:repeat(2,1fr);gap:11px}
-  .media-grid{grid-template-columns:repeat(3,1fr);gap:12px}
+  .media-grid{grid-template-columns:repeat(4,1fr);gap:11px}
   .gc{grid-template-columns:repeat(2,1fr);gap:12px}
   .cer-grid{grid-template-columns:1fr 1fr;gap:16px}
   .cover{grid-template-columns:1fr 160px}
@@ -825,11 +826,15 @@ h1 em{font-style:italic;font-weight:300}
           <div class="ctx">Presentación de libro</div>
         </div>
       </article>
+      <article class="media">
+        <img src="img/serrat.jpg" alt="Lucía Fernández Cívico entrevistando a Joan Manuel Serrat">
+        <div>
+          <div class="who">Joan Manuel Serrat</div>
+          <div class="ctx">Entrevista</div>
+          <div class="link" style="margin-top:5px"><a href="https://www.youtube.com/watch?v=biY_8v_beQc" target="_blank" rel="noopener">Ver la entrevista</a></div>
+        </div>
+      </article>
     </div>
-    <p style="margin:18px 0 0;font-size:13.5px;color:var(--muted)">
-      También entrevistó a <b style="color:var(--ink);font-weight:600">Joan Manuel Serrat</b>, entre otras figuras.
-      <span class="link" style="margin-left:4px"><a href="https://www.youtube.com/watch?v=biY_8v_beQc" target="_blank" rel="noopener">Ver la entrevista</a></span>
-    </p>
   </section>
 
   <!-- ============ GESTIÓN CULTURAL ============ -->
