@@ -127,13 +127,9 @@ h1 em{font-style:italic;font-weight:300}
 .two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;align-items:stretch}
 .tres-col{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
 .tres-col .panel.with-art{display:block}
-.tres-col .panel.with-art .art{margin-bottom:11px}
-.panel.ancho{display:block}
-.dos-talleres{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:12px}
-.taller{display:grid;grid-template-columns:76px 1fr;gap:15px;align-items:start}
-.taller .art{width:76px;height:76px;border-radius:2px;overflow:hidden}
-.taller .art img{width:100%;height:100%;object-fit:cover;display:block}
-.taller p{margin:0}
+.tres-col .panel.with-art .art{width:100px;height:100px;margin-bottom:12px}
+.tres-col .panel.with-art .art.logo{padding:11px}
+
 .panel.with-art{display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:start}
 .panel.with-art .art{width:76px;height:76px;border-radius:2px;overflow:hidden;flex:none}
 .art-col{display:flex;flex-direction:column;gap:9px}
@@ -183,21 +179,25 @@ h1 em{font-style:italic;font-weight:300}
 .pod .link a{font-size:10.5px}
 
 /* ---------- demo de voz ---------- */
-.demo{background:var(--deep);color:var(--deep-ink);border-radius:3px;padding:24px 28px;display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;break-inside:avoid}
+.demo{background:var(--deep);color:var(--deep-ink);border-radius:3px;padding:24px 28px;break-inside:avoid}
 .demo .eyebrow{color:var(--gold)}
 .demo h3{font-family:var(--display);font-weight:400;font-size:24px;margin:8px 0 0}
+.demo p{margin:14px 0 0;font-size:13px;opacity:.78;max-width:none}
 .demo p{margin:7px 0 0;font-size:13px;opacity:.78;max-width:30em}
-.demo .tracks{display:flex;flex-direction:column;gap:9px}
+.demo .tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:16px}
 .demo .tracks a{
-  display:flex;align-items:center;gap:10px;text-decoration:none;font-size:13.5px;
-  border:1px solid rgba(201,174,106,.4);border-radius:100px;padding:7px 16px;white-space:nowrap;
+  display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-size:13.5px;
+  border:1px solid rgba(201,174,106,.4);border-radius:100px;padding:9px 16px;text-align:center;
 }
 .demo .tracks a:hover{border-color:var(--gold);background:rgba(201,174,106,.1)}
 .demo .tracks svg{width:14px;height:14px;flex:none;color:var(--gold)}
 
 /* ---------- ceremonial / entrevistas ---------- */
 .cer-lead{border-radius:3px;width:100%;aspect-ratio:2/1;object-fit:cover;object-position:center top;box-shadow:var(--shadow);margin-bottom:18px}
+.cer-intro{margin:0 0 16px;font-size:14px;line-height:1.6;max-width:62ch}
 .cer-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.cer-grid.solo-thumbs{grid-template-columns:1fr}
+.cer-grid.solo-thumbs .thumbs{grid-template-columns:repeat(6,1fr)}
 .cer-copy p{margin:0 0 12px;font-size:14px;line-height:1.6;max-width:36em}
 .cer-copy p:last-child{margin-bottom:0}
 .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -248,11 +248,10 @@ h1 em{font-style:italic;font-weight:300}
   .ws-grid{grid-template-columns:1fr}
   .media-grid{grid-template-columns:1fr}
   .cer-grid{grid-template-columns:1fr}
-  .demo{grid-template-columns:1fr;padding:22px}
+  .demo{padding:22px}
+  .demo .tracks{grid-template-columns:1fr}
   .contact{grid-template-columns:1fr;padding:26px}
   .panel.with-art{grid-template-columns:60px 1fr;gap:13px}
-  .taller{grid-template-columns:60px 1fr;gap:12px}
-  .taller .art{width:60px;height:60px}
   .tres-col{grid-template-columns:1fr}
   .panel.with-art .art{width:60px;height:60px}
 }
@@ -278,7 +277,7 @@ h1 em{font-style:italic;font-weight:300}
   .sub-head h3{font-size:13pt}
   .sec-head,.sub-head{break-after:avoid;break-inside:avoid}
   /* grupos que no se parten entre hojas */
-  .thumbs,.ws-card,.pod,.media,.gc-item,.two-col,.tres-col,.panel.ancho,.cer-grid{break-inside:avoid}
+  .thumbs,.ws-card,.pod,.media,.gc-item,.two-col,.tres-col,.cer-grid{break-inside:avoid}
   .pod-list{break-inside:avoid}
   /* la nota de Serrat no se separa de las fotos */
   #sec-entrevistas{break-inside:avoid}
@@ -295,9 +294,7 @@ h1 em{font-style:italic;font-weight:300}
   .pod-list{grid-template-columns:repeat(2,1fr);gap:0 20px}
   .two-col{grid-template-columns:repeat(2,1fr);gap:11px}
   .tres-col{grid-template-columns:repeat(3,1fr);gap:10px}
-  .dos-talleres{grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
-  .taller{grid-template-columns:52px 1fr;gap:10px}
-  .taller .art{width:52px;height:52px}
+  .tres-col .panel.with-art .art{width:62px;height:62px;margin-bottom:8px}
   .media-grid{grid-template-columns:repeat(4,1fr);gap:11px}
   .gc{grid-template-columns:repeat(2,1fr);gap:12px}
   .cer-grid{grid-template-columns:1fr 1fr;gap:16px}
@@ -322,6 +319,7 @@ h1 em{font-style:italic;font-weight:300}
   .panel.with-art .art{width:54px;height:54px}
   .cer-lead{aspect-ratio:2/1;margin-bottom:11px}
   .cer-copy p{font-size:8.2pt;margin-bottom:7px}
+  .cer-intro{font-size:8.4pt;margin-bottom:10px}
   .thumbs{gap:5px}
   .media .who{font-size:11pt}
   .media .ctx{font-size:7.4pt}
@@ -330,7 +328,9 @@ h1 em{font-style:italic;font-weight:300}
   .gc-body p{font-size:7.6pt}
   .demo h3{font-size:13pt}
   .demo p{font-size:7.6pt}
-  .demo .tracks a{font-size:8pt;padding:4px 11px}
+  .demo .tracks a{font-size:7.6pt;padding:4px 9px}
+  .demo .tracks{grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}
+  .demo p{margin-top:9px}
   .link a{border-bottom:none}
   .contact .lines a.wa-big{border:none;padding:0;font-size:9.5pt}
   .contact .lines a.wa-big[href^="https://wa.me"]::after{content:" +54 9 341 576-6938"}
@@ -382,7 +382,7 @@ h1 em{font-style:italic;font-weight:300}
       </p>
       <p class="creds">
         Productora de radio y medios audiovisuales, realizadora integral de podcasts, docente
-        universitaria y locutora profesional: voz en off, doblaje, audiolibros, locución comercial,
+        universitaria y locutora: voz en off, doblaje, audiolibros, locución comercial,
         artística e institucional.
       </p>
       <p class="perfil">
@@ -457,19 +457,48 @@ h1 em{font-style:italic;font-weight:300}
           </p>
         </div>
       </div>
+      <div class="panel with-art">
+        <div class="art"><img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee"></div>
+        <div>
+          <div class="eyebrow">Talleres de Grabación y Edición Sonora · Plan Rosario Lee</div>
+          <h3>Docente tallerista, facilitadora y editora</h3>
+          <p>
+            Dispositivo de mediación lectora y producción de podcasts coordinado con infancias, donde
+            la oralidad, la lectura y la experimentación con el sonido se articulan como herramientas
+            lúdicas y pedagógicas de expresión.
+          </p>
+          <div class="link" style="margin-top:10px"><a href="https://www.youtube.com/playlist?list=PLbD0JvZ82fENpsM39KljaRrIi4oI-izSH" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </div>
+      <div class="panel with-art">
+        <div class="art"><img src="img/noche-lapices.jpg" alt="Tapa de Voces y Memoria, La Noche de los Lápices"></div>
+        <div>
+          <div class="eyebrow">Voces y Memoria · Puerto Joven Rosario</div>
+          <h3>Tallerista, diseñadora pedagógica y productora general</h3>
+          <p>
+            Miniserie en tres capítulos que promueve la memoria intergeneracional conectando las
+            vivencias del pasado con las inquietudes juveniles actuales. Producida como resultado
+            práctico del taller en el Laboratorio Tecnológico de Puerto Joven, en el marco de
+            Septiembre Joven.
+          </p>
+          <div class="link" style="margin-top:10px"><a href="https://open.spotify.com/episode/6huOFSZFjJTzNJ0hv0FABW" target="_blank" rel="noopener">Escuchar</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:22px">
       <div class="panel">
-        <div class="eyebrow">Escuela Secundaria N.º 518 «Carlos Fuentealba»</div>
-        <h3>Manual del saber artesanal</h3>
+        <div class="eyebrow">Manual del saber artesanal · Escuela Secundaria N.º 518 «Carlos Fuentealba»</div>
+        <h3>Capacitadora en comunicación y expresión sonora</h3>
         <p>
-          Capacitadora en comunicación y expresión sonora, junto a estudiantes de 2.º año, en un
-          proyecto enfocado en el registro testimonial para el rescate del linaje cultural de la
-          comunidad artesana.
+          Junto a estudiantes de 2.º año, en un proyecto enfocado en el registro testimonial para el
+          rescate del linaje cultural de la comunidad artesana.
         </p>
         <div class="link" style="margin-top:10px"><a href="https://www.instagram.com/p/DalNS-VvZCJ/" target="_blank" rel="noopener">Ver el registro</a></div>
       </div>
       <div class="panel">
-        <div class="eyebrow">Nexo Club Cultural</div>
-        <h3>Narrativas Sonoras y Jornada Sonora</h3>
+        <div class="eyebrow">Narrativas Sonoras y Jornada Sonora · Nexo Club Cultural</div>
+        <h3>Tallerista y realizadora</h3>
         <p>
           Experiencia inmersiva e interactiva: el encuentro articuló distintas postas sensoriales
           —escucha profunda en penumbras, dinámicas lúdicas de grabación, efectos de sonido y
@@ -477,33 +506,6 @@ h1 em{font-style:italic;font-weight:300}
           realizadas por quienes participaron del espacio formativo.
         </p>
         <div class="link" style="margin-top:10px"><a href="https://www.instagram.com/p/DAjRcGhyBkR/" target="_blank" rel="noopener">Ver el registro</a></div>
-      </div>
-    </div>
-
-    <div class="panel ancho" style="margin-top:22px">
-      <h3>Talleres de Grabación y Edición Sonora</h3>
-      <div class="dos-talleres">
-        <div class="taller">
-          <div class="art"><img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee"></div>
-          <p>
-            <b>Plan Rosario Lee.</b> Docente tallerista, facilitadora y editora en el dispositivo de
-            mediación lectora y producción de podcasts coordinado con infancias, donde la oralidad, la
-            lectura y la experimentación con el sonido se articulan como herramientas lúdicas y
-            pedagógicas de expresión.
-            <span class="link"><a href="https://www.youtube.com/playlist?list=PLbD0JvZ82fENpsM39KljaRrIi4oI-izSH" target="_blank" rel="noopener">Escuchar</a></span>
-          </p>
-        </div>
-        <div class="taller">
-          <div class="art"><img src="img/noche-lapices.jpg" alt="Tapa de Voces y Memoria, La Noche de los Lápices"></div>
-          <p>
-            <b>Voces y Memoria — Puerto Joven Rosario.</b> Tallerista, diseñadora pedagógica y
-            productora general de la miniserie en tres capítulos que promueve la memoria
-            intergeneracional conectando las vivencias del pasado con las inquietudes juveniles
-            actuales. Producida como resultado práctico del taller en el Laboratorio Tecnológico de
-            Puerto Joven, en el marco de Septiembre Joven.
-            <span class="link"><a href="https://open.spotify.com/episode/6huOFSZFjJTzNJ0hv0FABW" target="_blank" rel="noopener">Escuchar</a></span>
-          </p>
-        </div>
       </div>
     </div>
 
@@ -595,8 +597,51 @@ h1 em{font-style:italic;font-weight:300}
     </div>
   </section>
 
+  <!-- ============ LOCUCIÓN ============ -->
+  <section id="sec-locucion">
+    <div class="sec-head">
+      <h2>Locución</h2>
+      <span class="count">Comercial · Institucional · Ceremonial</span>
+    </div>
+
+    <div class="demo">
+      <div class="eyebrow">Demo</div>
+      <h3>Escuchar la voz</h3>
+      <div class="tracks">
+        <a href="https://www.instagram.com/p/CXen6YDv7eo/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Voz de los colectivos de Rosario</a>
+        <a href="https://www.instagram.com/p/CXcIAgSroHf/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Locución comercial · Atom Protect</a>
+        <a href="https://www.instagram.com/tv/B-cotY-J9dd/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Locución en inglés</a>
+      </div>
+      <p>Locución comercial, institucional y en inglés. Estudio de grabación propio.</p>
+    </div>
+
+    <div class="sub-head">
+      <h3>Ceremonial y protocolo</h3>
+      <span class="note">Actos oficiales · Congresos</span>
+    </div>
+
+    <p class="cer-intro">
+      Dos décadas de experiencia profesional en la conducción y locución de actos oficiales,
+      aperturas institucionales, congresos y ceremonias protocolares para organismos públicos
+      y universidades.
+    </p>
+
+    <img class="cer-lead" src="img/cer-acto.jpg" alt="Lucía Fernández Cívico en un acto masivo al aire libre">
+
+    <div class="cer-grid solo-thumbs">
+      <div class="thumbs">
+        <img src="img/cer-nueva-1.jpg" alt="Locución en un evento institucional">
+        <img src="img/cer-nueva-2.jpg" alt="Locución en un escenario">
+        <img src="img/cer-1.jpg" alt="Locución en un acto de gobierno">
+        <img src="img/cer-3.jpg" alt="Locución en un acto con banderas oficiales">
+        <img src="img/cer-4.jpg" alt="Micrófono en mano durante un evento">
+        <img src="img/cer-5.jpg" alt="Locución en un acto institucional">
+      </div>
+    </div>
+  </section>
+
   <!-- ============ AUDIOVISUAL ============ -->
-  <section id="sec-audiovisual">
+  <section>
     <div class="sec-head">
       <h2>Audiovisual</h2>
       <span class="count">Conducción · Producción · Cronista</span>
@@ -759,52 +804,6 @@ h1 em{font-style:italic;font-weight:300}
         </div>
       </article>
 
-    </div>
-  </section>
-
-  <!-- ============ LOCUCIÓN ============ -->
-  <section>
-    <div class="sec-head">
-      <h2>Locución</h2>
-      <span class="count">Comercial · Institucional · Ceremonial</span>
-    </div>
-
-    <div class="demo">
-      <div>
-        <div class="eyebrow">Demo</div>
-        <h3>Escuchar la voz</h3>
-        <p>Locución comercial, institucional y en inglés.<br>Estudio de grabación propio.</p>
-      </div>
-      <div class="tracks">
-        <a href="https://www.instagram.com/p/CXen6YDv7eo/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Bondis · comercial</a>
-        <a href="https://www.instagram.com/p/CXcIAgSroHf/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Atom Protect · comercial</a>
-        <a href="https://www.instagram.com/tv/B-cotY-J9dd/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Locución en inglés</a>
-      </div>
-    </div>
-
-    <div class="sub-head">
-      <h3>Ceremonial y protocolo</h3>
-      <span class="note">Actos oficiales · Congresos</span>
-    </div>
-
-    <img class="cer-lead" src="img/cer-acto.jpg" alt="Lucía Fernández Cívico en un acto masivo al aire libre">
-
-    <div class="cer-grid">
-      <div class="cer-copy">
-        <p>
-          Dos décadas de experiencia profesional en la conducción y locución de actos oficiales,
-          aperturas institucionales, congresos y ceremonias protocolares para organismos públicos
-          y universidades.
-        </p>
-      </div>
-      <div class="thumbs">
-        <img src="img/cer-nueva-1.jpg" alt="Locución en un evento institucional">
-        <img src="img/cer-nueva-2.jpg" alt="Locución en un escenario">
-        <img src="img/cer-1.jpg" alt="Locución en un acto de gobierno">
-        <img src="img/cer-3.jpg" alt="Locución en un acto con banderas oficiales">
-        <img src="img/cer-4.jpg" alt="Micrófono en mano durante un evento">
-        <img src="img/cer-5.jpg" alt="Locución en un acto institucional">
-      </div>
     </div>
   </section>
 
