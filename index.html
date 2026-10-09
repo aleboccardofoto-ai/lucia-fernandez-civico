@@ -78,6 +78,7 @@ h1 em{font-style:italic;font-weight:300}
 .degrees{margin:22px 0 0;font-size:15px;max-width:34em;line-height:1.5}
 .degrees b{font-weight:600}
 .creds{margin:12px 0 0;font-size:13.5px;color:var(--muted);max-width:38em;line-height:1.55}
+.perfil{margin:11px 0 0;font-size:13px;color:var(--muted);max-width:44em;line-height:1.55}
 .portrait{border-radius:2px;width:100%;aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow)}
 .portrait-cap{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:8px}
 .services{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px;padding-bottom:26px}
@@ -96,10 +97,10 @@ h1 em{font-style:italic;font-weight:300}
 /* ---------- premio ---------- */
 .award{
   background:var(--deep);color:var(--deep-ink);border-radius:3px;
-  display:grid;grid-template-columns:235px 1fr;gap:30px;align-items:center;
+  display:grid;grid-template-columns:215px 1fr;gap:30px;align-items:center;
   padding:30px 34px;margin-top:44px;
 }
-.award-fotos{display:flex;flex-direction:column;gap:10px}
+.award-fotos{display:flex;flex-direction:column;gap:9px}
 .award img{border-radius:2px;width:100%;display:block}
 .award .eyebrow{color:var(--gold)}
 .award h3{font-family:var(--display);font-weight:400;font-size:clamp(24px,3.6vw,32px);margin:10px 0;line-height:1.12;letter-spacing:-.01em}
@@ -126,6 +127,7 @@ h1 em{font-style:italic;font-weight:300}
 .two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;align-items:stretch}
 .panel.with-art{display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:start}
 .panel.with-art .art{width:76px;height:76px;border-radius:2px;overflow:hidden;flex:none}
+.art-col{display:flex;flex-direction:column;gap:9px}
 .panel.with-art .art img{width:100%;height:100%;object-fit:cover;display:block}
 .panel.with-art .art.logo{background:#FFFFFF;display:flex;align-items:center;justify-content:center;padding:8px}
 .panel.with-art .art.logo img{object-fit:contain}
@@ -138,6 +140,7 @@ h1 em{font-style:italic;font-weight:300}
 .tv-item .shot.plain{background:var(--deep);color:var(--gold)}
 .tv-item .shot.logo img{object-fit:cover}
 .gc-ph{aspect-ratio:16/9;overflow:hidden;background:var(--surface)}
+.gc-ph.duo{display:grid;grid-template-columns:1fr 1fr;gap:3px}
 .gc-ph img{width:100%;height:100%;object-fit:cover;display:block}
 .gc-ph.logo{background:#FFFFFF;padding:22px}
 .gc-ph.logo img{object-fit:contain}
@@ -270,8 +273,8 @@ h1 em{font-style:italic;font-weight:300}
   .sub-head{margin:16px 0 10px}
   .sub-head h3{font-size:12pt}
   .award,.contact,.demo{padding:15px 18px;break-inside:avoid}
-  .award{grid-template-columns:152px 1fr;gap:16px;margin-top:14px;break-before:avoid}
-  .award-fotos{gap:6px}
+  .award{grid-template-columns:140px 1fr;gap:18px;margin-top:14px;break-before:avoid}
+  .award-fotos{gap:7px}
   .contact{margin-top:16px;break-before:avoid}
   /* A4 deja ~700px utiles: sin esto se dispara la media query de movil */
   .tv-grid{grid-template-columns:repeat(3,1fr);gap:10px}
@@ -358,12 +361,21 @@ h1 em{font-style:italic;font-weight:300}
       <h1>Lucía<br>Fernández <em>Cívico</em></h1>
       <p class="degrees">
         <b>Magíster en Comunicación y Educación</b> · Especialista en Comunicación Radiofónica (UNLP)
-        — <b>Licenciada en Comunicación Social</b> · Locutora Nacional (UNR / ISET N.º 18)
+        · <b>Licenciada en Comunicación Social</b> (UNR) y Locutora Nacional (Iset XVIII)
       </p>
       <p class="creds">
         Productora de radio y medios audiovisuales, realizadora integral de podcasts, docente
         universitaria y locutora profesional: voz en off, doblaje, audiolibros, locución comercial,
         artística e institucional.
+      </p>
+      <p class="perfil">
+        Profesional de la comunicación con sólida formación de posgrado y trayectoria en producción
+        radiofónica, diseño sonoro y realización integral de proyectos de audio documental, histórico
+        y cultural. Combina experiencia en conducción y producción en medios televisivos y radiales de
+        alcance nacional con la docencia universitaria, facilitación de talleres participativos y
+        gestión de contenidos vinculados a memoria, identidad territorial y patrimonio. Su actividad
+        en gestión cultural está orientada a la literatura, habiendo formado parte de la creación del
+        Primer Festival de Poesía de Trevelin.
       </p>
     </div>
     <div>
@@ -401,9 +413,9 @@ h1 em{font-style:italic;font-weight:300}
       <div class="eyebrow">Premio Martín Fierro · Documental de radio</div>
       <h3>30 años después del amor</h3>
       <p>
-        Participación en la producción y la locución de este homenaje a uno de los discos
-        emblemáticos del rock nacional, galardonado en la categoría Documental de radio con el
-        premio Martín Fierro. Desarrollado íntegramente en Radio Universidad de Rosario.
+        Participación en la producción y locución de «30 años después del amor», homenaje a uno de
+        los discos emblemáticos del rock nacional, galardonada en la categoría Documental de radio
+        con el premio Martín Fierro. Desarrollado íntegramente en Radio Universidad de Rosario.
       </p>
       <div class="meta">Radio Universidad de Rosario · 2023</div>
       <div class="link" style="margin-top:13px">
@@ -426,22 +438,60 @@ h1 em{font-style:italic;font-weight:300}
           <div class="eyebrow">Licenciatura en Comunicación Social</div>
           <h3>Docente universitaria</h3>
           <p>
-            Cátedra de Producción Radiofónica. Dicta talleres de realización de podcasts de manera
-            presencial y virtual, para instituciones, infancias, juventudes y adultos mayores.
+            Desde hace más de una década investigo y enseño el cruce entre la voz, el relato sonoro y
+            las nuevas narrativas en audio, combinando la práctica pedagógica con la realización en
+            medios y formatos podcast.
           </p>
         </div>
       </div>
       <div class="panel with-art">
-        <div class="art"><img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee"></div>
+        <div class="art-col">
+          <div class="art"><img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee"></div>
+          <div class="art"><img src="img/noche-lapices.jpg" alt="Tapa de Voces y Memoria, La Noche de los Lápices"></div>
+        </div>
         <div>
-          <div class="eyebrow">Infancias · Plan Rosario Lee</div>
+          <div class="eyebrow">Infancias y juventudes</div>
           <h3>Talleres de Grabación y Edición Sonora</h3>
           <p>
-            Dispositivo de mediación lectora y producción de podcasts con infancias, donde la oralidad,
-            la lectura y la experimentación con el sonido se articulan como herramientas lúdicas y
-            pedagógicas de expresión. Docente tallerista, facilitadora y edición técnica.
+            <b>Plan Rosario Lee.</b> Docente tallerista, facilitadora y editora en el dispositivo de
+            mediación lectora y producción de podcasts coordinado con infancias, donde la oralidad, la
+            lectura y la experimentación con el sonido se articulan como herramientas lúdicas y
+            pedagógicas de expresión.
+            <span class="link"><a href="https://www.youtube.com/playlist?list=PLbD0JvZ82fENpsM39KljaRrIi4oI-izSH" target="_blank" rel="noopener">Escuchar</a></span>
+          </p>
+          <p>
+            <b>Voces y Memoria — Puerto Joven Rosario.</b> Tallerista, diseñadora pedagógica y
+            productora general de la miniserie en tres capítulos que promueve la memoria
+            intergeneracional conectando las vivencias del pasado con las inquietudes juveniles
+            actuales. Producida como resultado práctico del taller en el Laboratorio Tecnológico de
+            Puerto Joven, en el marco de Septiembre Joven.
+            <span class="link"><a href="https://open.spotify.com/episode/6huOFSZFjJTzNJ0hv0FABW" target="_blank" rel="noopener">Escuchar</a></span>
           </p>
         </div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:22px">
+      <div class="panel">
+        <div class="eyebrow">Escuela Secundaria N.º 518 «Carlos Fuentealba»</div>
+        <h3>Manual del saber artesanal</h3>
+        <p>
+          Capacitadora en comunicación y expresión sonora, junto a estudiantes de 2.º año, en un
+          proyecto enfocado en el registro testimonial para el rescate del linaje cultural de la
+          comunidad artesana.
+        </p>
+        <div class="link" style="margin-top:10px"><a href="https://www.instagram.com/p/DalNS-VvZCJ/" target="_blank" rel="noopener">Ver el registro</a></div>
+      </div>
+      <div class="panel">
+        <div class="eyebrow">Nexo Club Cultural</div>
+        <h3>Narrativas Sonoras y Jornada Sonora</h3>
+        <p>
+          Experiencia inmersiva e interactiva: el encuentro articuló distintas postas sensoriales
+          —escucha profunda en penumbras, dinámicas lúdicas de grabación, efectos de sonido y
+          reflexiones sobre el silencio— junto con la presentación de los podcasts y producciones
+          realizadas por quienes participaron del espacio formativo.
+        </p>
+        <div class="link" style="margin-top:10px"><a href="https://www.instagram.com/p/DAjRcGhyBkR/" target="_blank" rel="noopener">Ver el registro</a></div>
       </div>
     </div>
 
@@ -457,7 +507,7 @@ h1 em{font-style:italic;font-weight:300}
           <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Cuba"><use href="#fl-cu"></use></svg>
           <span class="place">La Habana · 2023</span>
         </div>
-        <div class="what"><b>Taller de Podcasts</b></div>
+        <div class="what"><b>Taller de Podcasts</b>.</div>
         <div class="where">Instituto Internacional de Periodismo José Martí</div>
       </article>
 
@@ -467,7 +517,7 @@ h1 em{font-style:italic;font-weight:300}
           <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="El Salvador"><use href="#fl-sv"></use></svg>
           <span class="place">El Salvador · 2015</span>
         </div>
-        <div class="what"><b>Taller de radio</b> en el Congreso Internacional de Medios de Comunicación y Televisión</div>
+        <div class="what"><b>Taller de radio</b> en el Congreso Internacional de Medios de Comunicación y Televisión.</div>
         <div class="where">UTEC, San Salvador</div>
       </article>
 
@@ -477,7 +527,7 @@ h1 em{font-style:italic;font-weight:300}
           <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="España"><use href="#fl-es"></use></svg>
           <span class="place">Barcelona, España · 2016</span>
         </div>
-        <div class="what"><b>«Experiencias Radiofónicas en la Educación»</b>, conferencia</div>
+        <div class="what"><b>«Experiencias Radiofónicas en la Educación»</b>, conferencia.</div>
         <div class="where">Facultad de Ciencias de la Comunicación, Universidad Autónoma de Barcelona</div>
       </article>
 
@@ -487,7 +537,7 @@ h1 em{font-style:italic;font-weight:300}
           <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="España"><use href="#fl-es"></use></svg>
           <span class="place">Asturias, España · 2018</span>
         </div>
-        <div class="what"><b>«Palabras y sonidos para una cartografía»</b>, taller</div>
+        <div class="what"><b>«Palabras y sonidos para una cartografía»</b>, taller.</div>
         <div class="where">Centro Social para Adultos Mayores de Mieres</div>
       </article>
 
@@ -497,7 +547,7 @@ h1 em{font-style:italic;font-weight:300}
           <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Colombia"><use href="#fl-co"></use></svg>
           <span class="place">Ibagué, Colombia · 2019</span>
         </div>
-        <div class="what"><b>Conferencia</b> sobre las formas de hacer y pensar la radio en Argentina</div>
+        <div class="what"><b>Conferencia</b> sobre las formas de hacer y pensar la radio en Argentina.</div>
         <div class="where">Universidad del Tolima</div>
       </article>
 
@@ -507,7 +557,7 @@ h1 em{font-style:italic;font-weight:300}
           <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Colombia"><use href="#fl-co"></use></svg>
           <span class="place">Medellín, Colombia · 2019</span>
         </div>
-        <div class="what"><b>Conversatorio</b>: la radio y su papel en la construcción de ciudadanía</div>
+        <div class="what"><b>Conversatorio</b>: la radio y su papel en la construcción de ciudadanía.</div>
         <div class="where">Alcaldía de Medellín</div>
       </article>
 
@@ -517,7 +567,7 @@ h1 em{font-style:italic;font-weight:300}
           <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Argentina"><use href="#fl-ar"></use></svg>
           <span class="place">Buenos Aires · 2019</span>
         </div>
-        <div class="what"><b>Podcast del Festival Basado en Hechos Reales</b>, tercera edición</div>
+        <div class="what"><b>Podcast del Festival Basado en Hechos Reales</b>, tercera edición.</div>
         <div class="where">Realización integral</div>
       </article>
 
@@ -527,7 +577,7 @@ h1 em{font-style:italic;font-weight:300}
           <svg class="flag" viewBox="0 0 30 20" role="img" aria-label="Argentina"><use href="#fl-ar"></use></svg>
           <span class="place">Rosario · 2019</span>
         </div>
-        <div class="what"><b>Taller de Medios</b>, Maestría en Comunicación Estratégica</div>
+        <div class="what"><b>Taller de Medios</b>, Maestría en Comunicación Estratégica.</div>
         <div class="where">Universidad Nacional de Rosario</div>
       </article>
     </div>
@@ -614,7 +664,6 @@ h1 em{font-style:italic;font-weight:300}
   <section>
     <div class="sec-head">
       <h2>Podcasts y series sonoras</h2>
-      <span class="count">Nueve producciones</span>
     </div>
 
     <div class="pod-list">
@@ -632,7 +681,7 @@ h1 em{font-style:italic;font-weight:300}
         <img src="img/qom.jpg" alt="Tapa de Relatos Artesanales Qom">
         <div>
           <h3>Relatos Artesanales Qom</h3>
-          <div class="rol"><span>Rol</span> Coordinación y producción</div>
+          <div class="rol"><span>Rol</span> Coordinación y locución</div>
           <p>Episodios sonoros que resguardan el saber-hacer y la memoria del Pueblo Qom del Barrio Toba Zona Oeste de Rosario: a través de sus voces, las historias, los oficios y los territorios que conforman el corazón vivo de su cultura. Con Fundación Alwa, la Escuela de Comunicación de la UNR y el Laboratorio Sonoro.</p>
           <div class="link"><a href="https://open.spotify.com/show/4c0AA0L0cJBRpnk9jgsRzr" target="_blank" rel="noopener">Escuchar</a></div>
         </div>
@@ -673,7 +722,7 @@ h1 em{font-style:italic;font-weight:300}
         <div>
           <h3>Historia del Balneario La Florida</h3>
           <div class="rol"><span>Rol</span> Producción y realización integral</div>
-          <p>Documental sonoro que explora la ribera rosarina a través de ejes históricos, turísticos, ecológicos y colectivos, construyendo una mirada sobre la identidad urbana vinculada al río Paraná.</p>
+          <p>Serie de entrevistas que explora la ribera rosarina a través de ejes históricos, turísticos, ecológicos y colectivos, construyendo una mirada sobre la identidad urbana vinculada al río Paraná.</p>
           <div class="link"><a href="https://open.spotify.com/show/4k3BubDo6T5Z3r61EsoxYO" target="_blank" rel="noopener">Escuchar</a></div>
         </div>
       </article>
@@ -698,15 +747,6 @@ h1 em{font-style:italic;font-weight:300}
         </div>
       </article>
 
-      <article class="pod">
-        <img src="img/noche-lapices.jpg" alt="Tapa de Memoria en cuerpo y palabra, La Noche de los Lápices">
-        <div>
-          <h3>Voces y Memoria</h3>
-          <div class="rol"><span>Rol</span> Tallerista, diseñadora pedagógica y productora general</div>
-          <p>Miniserie en tres capítulos que promueve la memoria intergeneracional conectando las vivencias del pasado con las inquietudes juveniles actuales. Resultado del taller en el Laboratorio Tecnológico de Puerto Joven, en el marco de Septiembre Joven.</p>
-          <div class="link"><a href="https://open.spotify.com/episode/6huOFSZFjJTzNJ0hv0FABW" target="_blank" rel="noopener">Escuchar</a></div>
-        </div>
-      </article>
     </div>
   </section>
 
@@ -719,9 +759,9 @@ h1 em{font-style:italic;font-weight:300}
 
     <div class="demo">
       <div>
-        <div class="eyebrow">Demo de voz</div>
+        <div class="eyebrow">Demo</div>
         <h3>Escuchar la voz</h3>
-        <p>Locución comercial, institucional y en inglés. Estudio de grabación propio.</p>
+        <p>Locución comercial, institucional y en inglés.<br>Estudio de grabación propio.</p>
       </div>
       <div class="tracks">
         <a href="https://www.instagram.com/p/CXen6YDv7eo/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Bondis · comercial</a>
@@ -740,12 +780,9 @@ h1 em{font-style:italic;font-weight:300}
     <div class="cer-grid">
       <div class="cer-copy">
         <p>
-          Conducción y locución de actos oficiales, aperturas institucionales, congresos y ceremonias
-          protocolares para organismos públicos y universidades.
-        </p>
-        <p>
-          Locución comercial, institucional y artística, voz en off, doblaje y audiolibros, con estudio
-          de grabación propio.
+          Dos décadas de experiencia profesional en la conducción y locución de actos oficiales,
+          aperturas institucionales, congresos y ceremonias protocolares para organismos públicos
+          y universidades.
         </p>
       </div>
       <div class="thumbs">
@@ -791,6 +828,7 @@ h1 em{font-style:italic;font-weight:300}
     </div>
     <p style="margin:18px 0 0;font-size:13.5px;color:var(--muted)">
       También entrevistó a <b style="color:var(--ink);font-weight:600">Joan Manuel Serrat</b>, entre otras figuras.
+      <span class="link" style="margin-left:4px"><a href="https://www.youtube.com/watch?v=biY_8v_beQc" target="_blank" rel="noopener">Ver la entrevista</a></span>
     </p>
   </section>
 
@@ -813,7 +851,10 @@ h1 em{font-style:italic;font-weight:300}
       </article>
 
       <article class="gc-item">
-        <div class="gc-ph"><img src="img/g-radialistas.jpg" alt="Equipo organizador del Encuentro de Radialistas Feministas"></div>
+        <div class="gc-ph duo">
+          <img src="img/g-radialistas.jpg" alt="Equipo organizador del Encuentro de Radialistas Feministas">
+          <img src="img/tv-radialistas.jpg" alt="Cobertura televisiva del Encuentro de Radialistas Feministas">
+        </div>
         <div class="gc-body">
           <div class="eyebrow">Rosario · 2019</div>
           <h3>Encuentro de Radialistas Feministas</h3>
