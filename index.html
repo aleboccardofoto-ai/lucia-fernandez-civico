@@ -179,15 +179,15 @@ h1 em{font-style:italic;font-weight:300}
 .pod .link a{font-size:10.5px}
 
 /* ---------- demo de voz ---------- */
-.demo{background:var(--deep);color:var(--deep-ink);border-radius:3px;padding:24px 28px;break-inside:avoid}
+.demo{background:var(--deep);color:var(--deep-ink);border-radius:3px;padding:24px 28px;break-inside:avoid;display:grid;grid-template-columns:minmax(230px,0.9fr) 1.9fr;gap:30px;align-items:center}
 .demo .eyebrow{color:var(--gold)}
 .demo h3{font-family:var(--display);font-weight:400;font-size:24px;margin:8px 0 0}
-.demo p{margin:14px 0 0;font-size:13px;opacity:.78;max-width:none}
+.demo p{margin:10px 0 0;font-size:12.5px;opacity:.78;line-height:1.5}
 .demo p{margin:7px 0 0;font-size:13px;opacity:.78;max-width:30em}
-.demo .tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:16px}
+.demo .tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .demo .tracks a{
-  display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-size:13.5px;
-  border:1px solid rgba(201,174,106,.4);border-radius:100px;padding:9px 16px;text-align:center;
+  display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-size:12.5px;
+  border:1px solid rgba(201,174,106,.4);border-radius:100px;padding:9px 12px;text-align:center;line-height:1.3;
 }
 .demo .tracks a:hover{border-color:var(--gold);background:rgba(201,174,106,.1)}
 .demo .tracks svg{width:14px;height:14px;flex:none;color:var(--gold)}
@@ -248,7 +248,7 @@ h1 em{font-style:italic;font-weight:300}
   .ws-grid{grid-template-columns:1fr}
   .media-grid{grid-template-columns:1fr}
   .cer-grid{grid-template-columns:1fr}
-  .demo{padding:22px}
+  .demo{padding:22px;grid-template-columns:1fr;gap:18px}
   .demo .tracks{grid-template-columns:1fr}
   .contact{grid-template-columns:1fr;padding:26px}
   .panel.with-art{grid-template-columns:60px 1fr;gap:13px}
@@ -329,8 +329,9 @@ h1 em{font-style:italic;font-weight:300}
   .demo h3{font-size:13pt}
   .demo p{font-size:7.6pt}
   .demo .tracks a{font-size:7.6pt;padding:4px 9px}
-  .demo .tracks{grid-template-columns:repeat(3,1fr);gap:7px;margin-top:10px}
-  .demo p{margin-top:9px}
+  .demo{grid-template-columns:minmax(150px,0.9fr) 1.9fr;gap:16px}
+  .demo .tracks{grid-template-columns:repeat(3,1fr);gap:6px}
+  .demo p{margin-top:6px;font-size:7.4pt}
   .link a{border-bottom:none}
   .contact .lines a.wa-big{border:none;padding:0;font-size:9.5pt}
   .contact .lines a.wa-big[href^="https://wa.me"]::after{content:" +54 9 341 576-6938"}
@@ -605,14 +606,16 @@ h1 em{font-style:italic;font-weight:300}
     </div>
 
     <div class="demo">
-      <div class="eyebrow">Demo</div>
-      <h3>Escuchar la voz</h3>
+      <div class="demo-txt">
+        <div class="eyebrow">Demo</div>
+        <h3>Escuchar la voz</h3>
+        <p>Locución comercial, institucional y en inglés. Estudio de grabación propio.</p>
+      </div>
       <div class="tracks">
         <a href="https://www.instagram.com/p/CXen6YDv7eo/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Voz de los colectivos de Rosario</a>
         <a href="https://www.instagram.com/p/CXcIAgSroHf/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Locución comercial · Atom Protect</a>
         <a href="https://www.instagram.com/tv/B-cotY-J9dd/" target="_blank" rel="noopener"><svg><use href="#ico-play"></use></svg> Locución en inglés</a>
       </div>
-      <p>Locución comercial, institucional y en inglés. Estudio de grabación propio.</p>
     </div>
 
     <div class="sub-head">
