@@ -125,6 +125,12 @@ h1 em{font-style:italic;font-weight:300}
 .panel p{margin:0;font-size:13.5px;line-height:1.6;opacity:.88}
 .panel + .panel{margin-top:0}
 .two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;align-items:stretch}
+.tres-col{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.tres-col .panel.with-art{display:block}
+.tres-col .panel.with-art .art{margin-bottom:11px}
+.panel.ancho{display:grid;grid-template-columns:76px 1fr;gap:18px;align-items:start}
+.dos-textos{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:9px}
+.dos-textos p{margin:0}
 .panel.with-art{display:grid;grid-template-columns:76px 1fr;gap:16px;align-items:start}
 .panel.with-art .art{width:76px;height:76px;border-radius:2px;overflow:hidden;flex:none}
 .art-col{display:flex;flex-direction:column;gap:9px}
@@ -241,7 +247,8 @@ h1 em{font-style:italic;font-weight:300}
   .cer-grid{grid-template-columns:1fr}
   .demo{grid-template-columns:1fr;padding:22px}
   .contact{grid-template-columns:1fr;padding:26px}
-  .panel.with-art{grid-template-columns:60px 1fr;gap:13px}
+  .panel.with-art,.panel.ancho{grid-template-columns:60px 1fr;gap:13px}
+  .tres-col{grid-template-columns:1fr}
   .panel.with-art .art{width:60px;height:60px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -266,7 +273,7 @@ h1 em{font-style:italic;font-weight:300}
   .sub-head h3{font-size:13pt}
   .sec-head,.sub-head{break-after:avoid;break-inside:avoid}
   /* grupos que no se parten entre hojas */
-  .thumbs,.ws-card,.pod,.media,.gc-item,.two-col,.cer-grid{break-inside:avoid}
+  .thumbs,.ws-card,.pod,.media,.gc-item,.two-col,.tres-col,.panel.ancho,.cer-grid{break-inside:avoid}
   .pod-list{break-inside:avoid}
   /* la nota de Serrat no se separa de las fotos */
   #sec-entrevistas{break-inside:avoid}
@@ -282,6 +289,9 @@ h1 em{font-style:italic;font-weight:300}
   .ws-grid{grid-template-columns:repeat(4,1fr);gap:10px}
   .pod-list{grid-template-columns:repeat(2,1fr);gap:0 20px}
   .two-col{grid-template-columns:repeat(2,1fr);gap:11px}
+  .tres-col{grid-template-columns:repeat(3,1fr);gap:10px}
+  .panel.ancho{grid-template-columns:54px 1fr;gap:12px}
+  .dos-textos{grid-template-columns:1fr 1fr;gap:14px}
   .media-grid{grid-template-columns:repeat(4,1fr);gap:11px}
   .gc{grid-template-columns:repeat(2,1fr);gap:12px}
   .cer-grid{grid-template-columns:1fr 1fr;gap:16px}
@@ -428,11 +438,11 @@ h1 em{font-style:italic;font-weight:300}
       <span class="count">Universidad · Talleres · Cinco países</span>
     </div>
 
-    <div class="two-col">
+    <div class="tres-col">
       <div class="panel with-art">
         <div class="art logo"><img src="img/unr.png" alt="Universidad Nacional de Rosario"></div>
         <div>
-          <div class="eyebrow">Cátedra de Producción Radiofónica · Licenciatura en Comunicación Social</div>
+          <div class="eyebrow">Cátedra de Producción Radiofónica · UNR</div>
           <h3>Docente universitaria</h3>
           <p>
             Desde hace más de una década investigo y enseño el cruce entre la voz, el relato sonoro y
@@ -441,34 +451,6 @@ h1 em{font-style:italic;font-weight:300}
           </p>
         </div>
       </div>
-      <div class="panel with-art">
-        <div class="art-col">
-          <div class="art"><img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee"></div>
-          <div class="art"><img src="img/noche-lapices.jpg" alt="Tapa de Voces y Memoria, La Noche de los Lápices"></div>
-        </div>
-        <div>
-          <div class="eyebrow">Infancias y juventudes</div>
-          <h3>Talleres de Grabación y Edición Sonora</h3>
-          <p>
-            <b>Plan Rosario Lee.</b> Docente tallerista, facilitadora y editora en el dispositivo de
-            mediación lectora y producción de podcasts coordinado con infancias, donde la oralidad, la
-            lectura y la experimentación con el sonido se articulan como herramientas lúdicas y
-            pedagógicas de expresión.
-            <span class="link"><a href="https://www.youtube.com/playlist?list=PLbD0JvZ82fENpsM39KljaRrIi4oI-izSH" target="_blank" rel="noopener">Escuchar</a></span>
-          </p>
-          <p>
-            <b>Voces y Memoria — Puerto Joven Rosario.</b> Tallerista, diseñadora pedagógica y
-            productora general de la miniserie en tres capítulos que promueve la memoria
-            intergeneracional conectando las vivencias del pasado con las inquietudes juveniles
-            actuales. Producida como resultado práctico del taller en el Laboratorio Tecnológico de
-            Puerto Joven, en el marco de Septiembre Joven.
-            <span class="link"><a href="https://open.spotify.com/episode/6huOFSZFjJTzNJ0hv0FABW" target="_blank" rel="noopener">Escuchar</a></span>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="two-col" style="margin-top:22px">
       <div class="panel">
         <div class="eyebrow">Escuela Secundaria N.º 518 «Carlos Fuentealba»</div>
         <h3>Manual del saber artesanal</h3>
@@ -489,6 +471,33 @@ h1 em{font-style:italic;font-weight:300}
           realizadas por quienes participaron del espacio formativo.
         </p>
         <div class="link" style="margin-top:10px"><a href="https://www.instagram.com/p/DAjRcGhyBkR/" target="_blank" rel="noopener">Ver el registro</a></div>
+      </div>
+    </div>
+
+    <div class="panel ancho" style="margin-top:22px">
+      <div class="art-col">
+        <div class="art"><img src="img/rosario-lee.jpg" alt="Tapa del proyecto Edukando Sueños, Plan Rosario Lee"></div>
+        <div class="art"><img src="img/noche-lapices.jpg" alt="Tapa de Voces y Memoria, La Noche de los Lápices"></div>
+      </div>
+      <div>
+        <h3>Talleres de Grabación y Edición Sonora</h3>
+        <div class="dos-textos">
+          <p>
+            <b>Plan Rosario Lee.</b> Docente tallerista, facilitadora y editora en el dispositivo de
+            mediación lectora y producción de podcasts coordinado con infancias, donde la oralidad, la
+            lectura y la experimentación con el sonido se articulan como herramientas lúdicas y
+            pedagógicas de expresión.
+            <span class="link"><a href="https://www.youtube.com/playlist?list=PLbD0JvZ82fENpsM39KljaRrIi4oI-izSH" target="_blank" rel="noopener">Escuchar</a></span>
+          </p>
+          <p>
+            <b>Voces y Memoria — Puerto Joven Rosario.</b> Tallerista, diseñadora pedagógica y
+            productora general de la miniserie en tres capítulos que promueve la memoria
+            intergeneracional conectando las vivencias del pasado con las inquietudes juveniles
+            actuales. Producida como resultado práctico del taller en el Laboratorio Tecnológico de
+            Puerto Joven, en el marco de Septiembre Joven.
+            <span class="link"><a href="https://open.spotify.com/episode/6huOFSZFjJTzNJ0hv0FABW" target="_blank" rel="noopener">Escuchar</a></span>
+          </p>
+        </div>
       </div>
     </div>
 
