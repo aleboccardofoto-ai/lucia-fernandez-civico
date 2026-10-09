@@ -1,4 +1,10 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Currículum de Lucía Fernández Cívico: docencia, producción audiovisual, podcasts y locución.">
 <title>Lucía Fernández Cívico</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -255,6 +261,52 @@ h1 em{font-style:italic;font-weight:300}
   .tres-col{grid-template-columns:1fr}
   .panel.with-art .art{width:60px;height:60px}
 }
+/* ---------- celular: letra para leer en la mano ---------- */
+@media screen and (max-width:660px){
+  body{font-size:16px;line-height:1.6}
+  .wrap{padding-inline:18px}
+  /* rotulos */
+  .eyebrow,.sec-head .count,.sub-head .note,.cover .plate{font-size:12px;letter-spacing:.12em;line-height:1.5}
+  .sub-head .note{margin-left:0;flex-basis:100%}
+  .ws-card .place,.badge-tv{font-size:12px;letter-spacing:.09em}
+  .portrait-cap{font-size:12px}
+  .rol span{font-size:11px;padding:1px 6px}
+  .link a,.pod .link a{font-size:13.5px;display:inline-block;padding-block:6px 2px}
+  /* textos de lectura */
+  .degrees{font-size:17px;line-height:1.55}
+  .creds,.perfil{font-size:16px;line-height:1.6}
+  .award p,.panel p,.tv-body p,.gc-body p,.demo p,.cer-intro,.ws-card .what{font-size:16px;line-height:1.6}
+  .pod p{font-size:15px;line-height:1.55}
+  .rol,.pod .rol{font-size:15px}
+  .ws-card .where,.media .ctx,.award .meta{font-size:14px}
+  .services span{font-size:14px;padding:5px 13px}
+  .demo .tracks a{font-size:15px;padding:13px 16px}
+  .contact .note{font-size:15px}
+  .contact .lines{font-size:16px;gap:10px}
+  .contact .lines a.wa-big{padding:12px 18px}
+  /* titulos de fichas */
+  .panel h3{font-size:23px;line-height:1.2}
+  .tv-body h3,.gc-body h3{font-size:22px}
+  .pod h3{font-size:20px}
+  .media .who{font-size:21px}
+  .demo h3{font-size:26px}
+  /* espacios */
+  .ws-grid,.tv-grid,.media-grid,.tres-col{gap:30px}
+  .pod{grid-template-columns:70px 1fr;gap:14px;padding-block:16px}
+  .pod img{width:70px;height:70px}
+  .panel{padding:22px 20px}
+  .tv-body{padding:18px 18px 20px;gap:7px}
+  .gc-body{padding:20px}
+  .gc-body h3{line-height:1.25}
+  /* en una columna la foto del acto no tiene alto propio: se lo damos */
+  .cer-foto{aspect-ratio:3/2}
+  .thumbs{grid-template-columns:repeat(2,1fr)}
+  /* las dos fotos del premio, a la misma altura */
+  .award-fotos{align-items:stretch}
+  .award-fotos img{height:104px;object-fit:cover}
+  .award-fotos img:first-child{flex:0 0 104px}
+  .gc-ph.logo{aspect-ratio:16/10;padding:26px}
+}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* ---------- impresión A4 ---------- */
@@ -340,7 +392,8 @@ h1 em{font-style:italic;font-weight:300}
   .contact .lines a.wa-big[href*="instagram"]::after{content:" @luciafernandezcivico"}
 }
 </style>
-
+</head>
+<body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="ico-tv" viewBox="0 0 24 24">
@@ -907,3 +960,5 @@ h1 em{font-style:italic;font-weight:300}
   </div>
 
 </div>
+</body>
+</html>
