@@ -92,7 +92,7 @@ h1 em{font-style:italic;font-weight:300}
 .contact .lines a.wa-big{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(242,241,236,.45);border-radius:100px;padding:9px 18px;font-weight:500}
 .contact .lines a.wa-big:hover{background:rgba(242,241,236,.1);border-color:currentColor}
 .contact .lines a.wa-big svg{width:17px;height:17px;flex:none;color:#25D366}
-.contact .lines a.wa-big[href^="mailto"] svg{color:var(--gold)}
+.contact .lines a.wa-big[href^="mailto"] svg,.contact .lines a.wa-big[href*="instagram"] svg{color:var(--gold)}
 
 /* ---------- premio ---------- */
 .award{
@@ -337,6 +337,7 @@ h1 em{font-style:italic;font-weight:300}
   .contact .lines a.wa-big{border:none;padding:0;font-size:9.5pt}
   .contact .lines a.wa-big[href^="https://wa.me"]::after{content:" +54 9 341 576-6938"}
   .contact .lines a.wa-big[href^="mailto"]::after{content:" lfernandezcivico@gmail.com"}
+  .contact .lines a.wa-big[href*="instagram"]::after{content:" @luciafernandezcivico"}
 }
 </style>
 
@@ -353,6 +354,11 @@ h1 em{font-style:italic;font-weight:300}
     <symbol id="ico-mail" viewBox="0 0 24 24">
       <rect x="2.4" y="4.8" width="19.2" height="14.4" rx="2.1" fill="none" stroke="currentColor" stroke-width="1.8"/>
       <path d="m3.4 6.6 8.6 6 8.6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="ico-ig" viewBox="0 0 24 24">
+      <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="17.4" cy="6.6" r="1.15" fill="currentColor"/>
     </symbol>
     <symbol id="ico-play" viewBox="0 0 24 24">
       <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
@@ -896,6 +902,7 @@ h1 em{font-style:italic;font-weight:300}
     <div class="lines">
       <a class="wa-big" href="https://wa.me/5493415766938" target="_blank" rel="noopener"><svg><use href="#ico-wa"></use></svg> Escribir por WhatsApp</a>
       <a class="wa-big" href="mailto:lfernandezcivico@gmail.com"><svg><use href="#ico-mail"></use></svg> Escribir por mail</a>
+      <a class="wa-big" href="https://www.instagram.com/luciafernandezcivico/" target="_blank" rel="noopener"><svg><use href="#ico-ig"></use></svg> Ver en Instagram</a>
     </div>
   </div>
 
