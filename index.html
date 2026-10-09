@@ -142,6 +142,8 @@ h1 em{font-style:italic;font-weight:300}
 .panel.with-art .art img{width:100%;height:100%;object-fit:cover;display:block}
 .panel.with-art .art.logo{background:#FFFFFF;display:flex;align-items:center;justify-content:center;padding:8px}
 .panel.with-art .art.logo img{object-fit:contain}
+/* logo de la UNR a todo el ancho de la ficha, pegado al borde de arriba */
+.tres-col .panel.with-art .art.logo.wide{width:calc(100% + 48px);height:auto;aspect-ratio:2/1;margin:-22px -24px 16px;padding:5% 6%;border-radius:3px 3px 0 0;border-bottom:1px solid var(--line-soft)}
 
 /* ---------- audiovisual ---------- */
 .tv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -260,6 +262,7 @@ h1 em{font-style:italic;font-weight:300}
   .panel.with-art{grid-template-columns:60px 1fr;gap:13px}
   .tres-col{grid-template-columns:1fr}
   .panel.with-art .art{width:60px;height:60px}
+  .tres-col .panel.with-art .art.logo.wide{width:calc(100% + 40px);margin:-22px -20px 16px}
 }
 /* ---------- celular: letra para leer en la mano ---------- */
 @media screen and (max-width:660px){
@@ -392,6 +395,7 @@ h1 em{font-style:italic;font-weight:300}
   .tres-col .panel p{font-size:7.7pt}
   .tres-col .panel.with-art .art{width:48px;height:48px}
   .tres-col .panel.with-art .art.logo{padding:3px}
+  .tres-col .panel.with-art .art.logo.wide{width:calc(100% + 26px);height:auto;aspect-ratio:2/1;margin:-11px -13px 8px;padding:5% 6%}
   .tres-col .eyebrow{letter-spacing:.1em}
   .tres-col .panel{padding:11px 13px}
   .tres-col .panel h3{font-size:10.5pt;margin:3px 0 5px}
@@ -529,7 +533,7 @@ h1 em{font-style:italic;font-weight:300}
 
     <div class="tres-col">
       <div class="panel with-art">
-        <div class="art logo"><img src="img/unr.png" alt="Universidad Nacional de Rosario"></div>
+        <div class="art logo wide"><img src="img/unr.png" alt="Universidad Nacional de Rosario"></div>
         <div>
           <div class="eyebrow">Cátedra de Producción Radiofónica · UNR</div>
           <h3>Docente universitaria</h3>
